@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-ink-25 text-ink-900 font-sans antialiased transition-colors duration-200;
+  }
+
+  html.dark body {
+    @apply bg-ink-950 text-ink-50;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  /* Visible keyboard focus everywhere - accessibility floor */
+  :focus-visible {
+    @apply outline-none ring-2 ring-iris-400 ring-offset-2 ring-offset-white dark:ring-offset-ink-950;
+  }
+
+  ::selection {
+    @apply bg-iris-200 text-iris-900;
+  }
+
+  /* Thin, quiet scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-200 dark:bg-ink-700 rounded-full;
+  }
+}
+
+@layer components {
+  /* Card surface used across the dashboard */
+  .surface {
+    @apply bg-white dark:bg-ink-850 border border-ink-100 dark:border-ink-800 rounded-2xl shadow-soft;
+  }
+
+  .surface-glass {
+    @apply bg-white/70 dark:bg-ink-850/60 backdrop-blur-xl border border-white/60 dark:border-ink-700/60 rounded-2xl shadow-soft;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-iris-500 text-white hover:bg-iris-600 active:bg-iris-700 shadow-soft;
+  }
+
+  .btn-secondary {
+    @apply btn bg-ink-100 text-ink-800 hover:bg-ink-200 dark:bg-ink-800 dark:text-ink-100 dark:hover:bg-ink-700;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-ink-600 hover:bg-ink-100 dark:text-ink-300 dark:hover:bg-ink-800;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-ink-200 dark:border-ink-700 bg-white dark:bg-ink-900 px-3.5 py-2.5 text-sm text-ink-900 dark:text-ink-50 placeholder:text-ink-400 focus:border-iris-400 transition-colors;
+  }
+
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-ink-700 dark:text-ink-300;
+  }
+
+  .field-error {
+    @apply mt-1 text-xs font-medium text-danger-500;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+
+  .sidebar-link {
+    @apply relative flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-ink-500 dark:text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800 hover:text-ink-900 dark:hover:text-ink-50 transition-colors;
+  }
+
+  .sidebar-link.active {
+    @apply bg-iris-50 text-iris-700 dark:bg-iris-500/10 dark:text-iris-300;
+  }
+
+  /* Trail marker - the signature "direction" motif used for the active nav item */
+  .trail-marker::before {
+    content: '';
+    @apply absolute -left-[1px] top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-full bg-marigold-400;
+  }
+}
