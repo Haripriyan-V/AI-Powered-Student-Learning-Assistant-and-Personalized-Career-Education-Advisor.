@@ -1,0 +1,6179 @@
+[
+{
+  "model": "career.careerfield",
+  "pk": 1,
+  "fields": {
+    "name": "Technology & Software",
+    "description": "Software development, AI, Cloud, Cybersecurity"
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 2,
+  "fields": {
+    "name": "Data & AI",
+    "description": "Data Science, Machine Learning, Analytics"
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 3,
+  "fields": {
+    "name": "Healthcare & Medicine",
+    "description": "Medical sciences, biotechnology, clinical research"
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 4,
+  "fields": {
+    "name": "Finance & Business",
+    "description": "Financial analysis, management, fintech"
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 5,
+  "fields": {
+    "name": "Data & Artificial Intelligence",
+    "description": "Career opportunities in Data & Artificial Intelligence"
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 6,
+  "fields": {
+    "name": "Technology & Software Engineering",
+    "description": "Career opportunities in Technology & Software Engineering"
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 7,
+  "fields": {
+    "name": "Cyber Security",
+    "description": ""
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 8,
+  "fields": {
+    "name": "Cloud Computing",
+    "description": ""
+  }
+},
+{
+  "model": "career.careerfield",
+  "pk": 9,
+  "fields": {
+    "name": "UI&UX DESIGN",
+    "description": ""
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 1,
+  "fields": {
+    "title": "AI / Machine Learning Engineer",
+    "description": "Designs, trains, and deploys scalable machine learning and deep learning models into production.",
+    "career_field": 5,
+    "average_salary_lpa": "14.50",
+    "growth_outlook": "very_high",
+    "created_at": "2026-08-30T11:14:18.743Z",
+    "required_skills": [
+      4,
+      5,
+      13,
+      12,
+      2,
+      6,
+      7,
+      10,
+      1,
+      8,
+      9,
+      11
+    ],
+    "related_interests": [
+      2,
+      1
+    ]
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 2,
+  "fields": {
+    "title": "Full-Stack Software Engineer",
+    "description": "Architects and builds complete web applications across frontend user interfaces and robust backend APIs.",
+    "career_field": 6,
+    "average_salary_lpa": "11.50",
+    "growth_outlook": "high",
+    "created_at": "2026-08-30T11:14:18.758Z",
+    "required_skills": [
+      4,
+      19,
+      13,
+      20,
+      15,
+      17,
+      1,
+      18,
+      16,
+      8,
+      3
+    ],
+    "related_interests": [
+      1
+    ]
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 3,
+  "fields": {
+    "title": "Data Scientist",
+    "description": "Extracts actionable business insights, builds statistical predictive models, and delivers data-driven intelligence.",
+    "career_field": 5,
+    "average_salary_lpa": "12.00",
+    "growth_outlook": "high",
+    "created_at": "2026-09-07T17:49:29.017Z",
+    "required_skills": [
+      4,
+      14,
+      2,
+      6,
+      7,
+      1,
+      8,
+      9
+    ],
+    "related_interests": []
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 4,
+  "fields": {
+    "title": "Cloud DevOps & Platform Engineer",
+    "description": "Automates deployment pipelines, ensures cloud infrastructure reliability, security, and scalability.",
+    "career_field": 6,
+    "average_salary_lpa": "13.00",
+    "growth_outlook": "very_high",
+    "created_at": "2026-09-07T17:49:29.057Z",
+    "required_skills": [
+      23,
+      24,
+      13,
+      20,
+      22,
+      21,
+      25,
+      1
+    ],
+    "related_interests": []
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 5,
+  "fields": {
+    "title": "Cyber Security Analyst",
+    "description": "Monitors networks for security breaches, investigates incidents, and implements defensive cyber measures.",
+    "career_field": 7,
+    "average_salary_lpa": "11.00",
+    "growth_outlook": "very_high",
+    "created_at": "2026-09-09T13:46:47.556Z",
+    "required_skills": [
+      32,
+      33,
+      21,
+      31,
+      25,
+      1,
+      34
+    ],
+    "related_interests": []
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 6,
+  "fields": {
+    "title": "Cloud Solutions Architect",
+    "description": "Architects robust, scalable, and secure cloud environments on AWS, Azure, and Google Cloud Platform.",
+    "career_field": 8,
+    "average_salary_lpa": "15.00",
+    "growth_outlook": "very_high",
+    "created_at": "2026-09-09T13:46:47.699Z",
+    "required_skills": [
+      23,
+      24,
+      13,
+      22,
+      21,
+      1,
+      35
+    ],
+    "related_interests": []
+  }
+},
+{
+  "model": "career.careerpath",
+  "pk": 7,
+  "fields": {
+    "title": "UI/UX & Product Designer",
+    "description": "Creates intuitive user experiences, wireframes, user journeys, and pixel-perfect interactive design systems.",
+    "career_field": 9,
+    "average_salary_lpa": "9.50",
+    "growth_outlook": "high",
+    "created_at": "2026-09-09T13:46:47.826Z",
+    "required_skills": [
+      4,
+      40,
+      36,
+      39,
+      37,
+      38
+    ],
+    "related_interests": [
+      4
+    ]
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 1,
+  "fields": {
+    "career_path": 1,
+    "skill": 1,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 2,
+  "fields": {
+    "career_path": 1,
+    "skill": 2,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 3,
+  "fields": {
+    "career_path": 1,
+    "skill": 5,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 4,
+  "fields": {
+    "career_path": 1,
+    "skill": 6,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 5,
+  "fields": {
+    "career_path": 1,
+    "skill": 7,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 6,
+  "fields": {
+    "career_path": 1,
+    "skill": 8,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 7,
+  "fields": {
+    "career_path": 1,
+    "skill": 9,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 8,
+  "fields": {
+    "career_path": 1,
+    "skill": 10,
+    "required_proficiency": 70,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 9,
+  "fields": {
+    "career_path": 1,
+    "skill": 11,
+    "required_proficiency": 70,
+    "importance": 3,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 10,
+  "fields": {
+    "career_path": 1,
+    "skill": 12,
+    "required_proficiency": 65,
+    "importance": 3,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 11,
+  "fields": {
+    "career_path": 1,
+    "skill": 13,
+    "required_proficiency": 65,
+    "importance": 3,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 12,
+  "fields": {
+    "career_path": 1,
+    "skill": 4,
+    "required_proficiency": 75,
+    "importance": 3,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 13,
+  "fields": {
+    "career_path": 3,
+    "skill": 1,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 14,
+  "fields": {
+    "career_path": 3,
+    "skill": 8,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 15,
+  "fields": {
+    "career_path": 3,
+    "skill": 9,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 16,
+  "fields": {
+    "career_path": 3,
+    "skill": 7,
+    "required_proficiency": 85,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 17,
+  "fields": {
+    "career_path": 3,
+    "skill": 6,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 18,
+  "fields": {
+    "career_path": 3,
+    "skill": 2,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 19,
+  "fields": {
+    "career_path": 3,
+    "skill": 14,
+    "required_proficiency": 85,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 20,
+  "fields": {
+    "career_path": 3,
+    "skill": 4,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 21,
+  "fields": {
+    "career_path": 2,
+    "skill": 15,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 22,
+  "fields": {
+    "career_path": 2,
+    "skill": 16,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 23,
+  "fields": {
+    "career_path": 2,
+    "skill": 17,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 24,
+  "fields": {
+    "career_path": 2,
+    "skill": 1,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 25,
+  "fields": {
+    "career_path": 2,
+    "skill": 8,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 26,
+  "fields": {
+    "career_path": 2,
+    "skill": 18,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 27,
+  "fields": {
+    "career_path": 2,
+    "skill": 19,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 28,
+  "fields": {
+    "career_path": 2,
+    "skill": 20,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 29,
+  "fields": {
+    "career_path": 2,
+    "skill": 13,
+    "required_proficiency": 65,
+    "importance": 3,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 30,
+  "fields": {
+    "career_path": 2,
+    "skill": 4,
+    "required_proficiency": 75,
+    "importance": 3,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 31,
+  "fields": {
+    "career_path": 4,
+    "skill": 21,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 32,
+  "fields": {
+    "career_path": 4,
+    "skill": 13,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 33,
+  "fields": {
+    "career_path": 4,
+    "skill": 22,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 34,
+  "fields": {
+    "career_path": 4,
+    "skill": 23,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 35,
+  "fields": {
+    "career_path": 4,
+    "skill": 24,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 36,
+  "fields": {
+    "career_path": 4,
+    "skill": 1,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 37,
+  "fields": {
+    "career_path": 4,
+    "skill": 20,
+    "required_proficiency": 85,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 38,
+  "fields": {
+    "career_path": 4,
+    "skill": 25,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 39,
+  "fields": {
+    "career_path": 5,
+    "skill": 31,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 40,
+  "fields": {
+    "career_path": 5,
+    "skill": 21,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 41,
+  "fields": {
+    "career_path": 5,
+    "skill": 32,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 42,
+  "fields": {
+    "career_path": 5,
+    "skill": 33,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 43,
+  "fields": {
+    "career_path": 5,
+    "skill": 1,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 44,
+  "fields": {
+    "career_path": 5,
+    "skill": 34,
+    "required_proficiency": 70,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 45,
+  "fields": {
+    "career_path": 5,
+    "skill": 25,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 46,
+  "fields": {
+    "career_path": 6,
+    "skill": 23,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 47,
+  "fields": {
+    "career_path": 6,
+    "skill": 13,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 48,
+  "fields": {
+    "career_path": 6,
+    "skill": 22,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 49,
+  "fields": {
+    "career_path": 6,
+    "skill": 21,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 50,
+  "fields": {
+    "career_path": 6,
+    "skill": 24,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 51,
+  "fields": {
+    "career_path": 6,
+    "skill": 35,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 52,
+  "fields": {
+    "career_path": 6,
+    "skill": 1,
+    "required_proficiency": 75,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 53,
+  "fields": {
+    "career_path": 7,
+    "skill": 36,
+    "required_proficiency": 90,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 54,
+  "fields": {
+    "career_path": 7,
+    "skill": 37,
+    "required_proficiency": 80,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 55,
+  "fields": {
+    "career_path": 7,
+    "skill": 38,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 56,
+  "fields": {
+    "career_path": 7,
+    "skill": 39,
+    "required_proficiency": 85,
+    "importance": 5,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 57,
+  "fields": {
+    "career_path": 7,
+    "skill": 40,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": true
+  }
+},
+{
+  "model": "career.skillrequirement",
+  "pk": 58,
+  "fields": {
+    "career_path": 7,
+    "skill": 4,
+    "required_proficiency": 80,
+    "importance": 4,
+    "is_core": false
+  }
+},
+{
+  "model": "career.assessmenttest",
+  "pk": 1,
+  "fields": {
+    "title": "General Career Aptitude & Interest Assessment",
+    "description": "Assess your aptitude and personality fit for emerging modern careers.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:14:18.774Z"
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 1,
+  "fields": {
+    "test": 1,
+    "text": "Which type of activity do you enjoy most in your free time?",
+    "related_career_field": 2,
+    "order": 1
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 2,
+  "fields": {
+    "test": 1,
+    "text": "What kind of work environment excites you?",
+    "related_career_field": 1,
+    "order": 2
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 3,
+  "fields": {
+    "test": 1,
+    "text": "How much do you enjoy working with data, statistics, and finding patterns?",
+    "related_career_field": 2,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 4,
+  "fields": {
+    "test": 1,
+    "text": "Do you enjoy building applications, websites, or software solutions?",
+    "related_career_field": 1,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 5,
+  "fields": {
+    "test": 1,
+    "text": "How interested are you in artificial intelligence and machine learning?",
+    "related_career_field": 2,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 6,
+  "fields": {
+    "test": 1,
+    "text": "How interested are you in protecting computer systems from cyber attacks?",
+    "related_career_field": 7,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 7,
+  "fields": {
+    "test": 1,
+    "text": "Do you enjoy solving programming problems and debugging code?",
+    "related_career_field": 1,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 8,
+  "fields": {
+    "test": 1,
+    "text": "How interested are you in cloud computing, servers, and cloud infrastructure?",
+    "related_career_field": 8,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 9,
+  "fields": {
+    "test": 1,
+    "text": "Do you enjoy designing user-friendly interfaces?",
+    "related_career_field": 9,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentquestion",
+  "pk": 10,
+  "fields": {
+    "test": 1,
+    "text": "How comfortable are you with analyzing large amounts of information?",
+    "related_career_field": 2,
+    "order": 0
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "text": "Building software projects and solving logic puzzles",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "text": "Analyzing charts, patterns, and datasets",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "text": "Helping people and organizing community events",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 4,
+  "fields": {
+    "question": 1,
+    "text": "Managing budgets and studying businesses",
+    "score_weight": 4
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "text": "Fast-paced tech startup solving high-impact problems",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "text": "Research lab conducting cutting-edge AI experiments",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 7,
+  "fields": {
+    "question": 2,
+    "text": "Finance or consulting firm advising corporate leaders",
+    "score_weight": 4
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 8,
+  "fields": {
+    "question": 2,
+    "text": "Healthcare institution helping patients directly",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 9,
+  "fields": {
+    "question": 3,
+    "text": "Not interested at all",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 10,
+  "fields": {
+    "question": 3,
+    "text": "Slightly interested",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 11,
+  "fields": {
+    "question": 3,
+    "text": "Moderately interested",
+    "score_weight": 4
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 12,
+  "fields": {
+    "question": 3,
+    "text": "Very interested",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 13,
+  "fields": {
+    "question": 4,
+    "text": "I strongly dislike it",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 14,
+  "fields": {
+    "question": 4,
+    "text": "I don't enjoy it much",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 15,
+  "fields": {
+    "question": 4,
+    "text": "I'm somewhat interested",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 16,
+  "fields": {
+    "question": 4,
+    "text": "I enjoy it",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 17,
+  "fields": {
+    "question": 5,
+    "text": "Not interested",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 18,
+  "fields": {
+    "question": 5,
+    "text": "Slightly interested",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 19,
+  "fields": {
+    "question": 5,
+    "text": "Somewhat interested",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 20,
+  "fields": {
+    "question": 5,
+    "text": "Very interested",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 21,
+  "fields": {
+    "question": 6,
+    "text": "Not interested at all",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 22,
+  "fields": {
+    "question": 6,
+    "text": "Slightly interested",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 23,
+  "fields": {
+    "question": 6,
+    "text": "Moderately interested",
+    "score_weight": 4
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 24,
+  "fields": {
+    "question": 6,
+    "text": "Extremely interested",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 25,
+  "fields": {
+    "question": 7,
+    "text": "Never",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 26,
+  "fields": {
+    "question": 7,
+    "text": "Rarely",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 27,
+  "fields": {
+    "question": 7,
+    "text": "Sometimes",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 28,
+  "fields": {
+    "question": 7,
+    "text": "Often",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 29,
+  "fields": {
+    "question": 8,
+    "text": "Not interested",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 30,
+  "fields": {
+    "question": 8,
+    "text": "Slightly interested",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 31,
+  "fields": {
+    "question": 8,
+    "text": "Moderately interested",
+    "score_weight": 4
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 32,
+  "fields": {
+    "question": 8,
+    "text": "Very interested",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 33,
+  "fields": {
+    "question": 9,
+    "text": "Not at all",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 34,
+  "fields": {
+    "question": 9,
+    "text": "A little",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 35,
+  "fields": {
+    "question": 9,
+    "text": "Sometimes",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 36,
+  "fields": {
+    "question": 9,
+    "text": "A lot",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 37,
+  "fields": {
+    "question": 10,
+    "text": "Very uncomfortable",
+    "score_weight": 1
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 38,
+  "fields": {
+    "question": 10,
+    "text": "Uncomfortable",
+    "score_weight": 2
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 39,
+  "fields": {
+    "question": 10,
+    "text": "Neutral",
+    "score_weight": 3
+  }
+},
+{
+  "model": "career.assessmentoption",
+  "pk": 40,
+  "fields": {
+    "question": 10,
+    "text": "Comfortable",
+    "score_weight": 5
+  }
+},
+{
+  "model": "career.assessmentresult",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "test": 1,
+    "field_scores": {
+      "2": 5,
+      "1": 5
+    },
+    "completed_at": "2026-09-08T17:37:36.435Z"
+  }
+},
+{
+  "model": "career.assessmentresult",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "test": 1,
+    "field_scores": {
+      "2": 7,
+      "1": 5,
+      "7": 1,
+      "8": 1,
+      "9": 1
+    },
+    "completed_at": "2026-09-08T18:25:31.310Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 1,
+    "match_score": "7.70",
+    "reasoning": "**7.7% match** for **AI / Machine Learning Engineer** (Data & Artificial Intelligence). ✓ **Key strengths aligned:** TensorFlow. ○ **Skill gaps to bridge:** Python, Machine Learning, NumPy.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:04:59.959Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 4,
+    "match_score": "6.00",
+    "reasoning": "**6.0% match** for **Cloud DevOps & Platform Engineer** (Technology & Software Engineering). ✓ Demonstrates foundational alignment through academic profile and interests. ○ **Skill gaps to bridge:** Linux, Docker, CI/CD Pipelines.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:04:59.985Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 3,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 3,
+    "match_score": "14.20",
+    "reasoning": "**14.2% match** for **Data Scientist** (Data & Artificial Intelligence). ✓ Demonstrates foundational alignment through academic profile and interests. ○ **Skill gaps to bridge:** Python, Statistics, SQL.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:05:00.023Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 4,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 2,
+    "match_score": "5.90",
+    "reasoning": "**5.9% match** for **Full-Stack Software Engineer** (Technology & Software Engineering). ✓ **Key strengths aligned:** JavaScript. ○ **Skill gaps to bridge:** React, REST APIs, Data Structures & Algorithms.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:05:00.035Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 5,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "career_path": 1,
+    "match_score": "35.00",
+    "reasoning": "**35.0% match** for **AI / Machine Learning Engineer** (Data & Artificial Intelligence). ✓ **Key strengths aligned:** Python, Machine Learning, NumPy, Pandas. ○ **Skill gaps to bridge:** Deep Learning, SQL, PyTorch.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:42:15.168Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 6,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "career_path": 4,
+    "match_score": "35.00",
+    "reasoning": "**35.0% match** for **Cloud DevOps & Platform Engineer** (Technology & Software Engineering). ✓ **Key strengths aligned:** Git, Python. ○ **Skill gaps to bridge:** Linux, Docker, CI/CD Pipelines.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:42:15.200Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 7,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "career_path": 3,
+    "match_score": "35.90",
+    "reasoning": "**35.9% match** for **Data Scientist** (Data & Artificial Intelligence). ✓ **Key strengths aligned:** Python, Statistics, Pandas, NumPy. ○ **Skill gaps to bridge:** SQL, Data Analysis.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:42:15.212Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 8,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "career_path": 2,
+    "match_score": "35.00",
+    "reasoning": "**35.0% match** for **Full-Stack Software Engineer** (Technology & Software Engineering). ✓ **Key strengths aligned:** React, REST APIs, Git, Python. ○ **Skill gaps to bridge:** JavaScript, Data Structures & Algorithms, Node.js.",
+    "source_assessment": null,
+    "generated_at": "2026-09-07T18:42:15.228Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 9,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 1,
+    "match_score": "7.70",
+    "reasoning": "**7.7% match** for **AI / Machine Learning Engineer** (Data & Artificial Intelligence). ✓ **Key strengths aligned:** TensorFlow. ○ **Skill gaps to bridge:** Python, Machine Learning, NumPy.",
+    "source_assessment": 1,
+    "generated_at": "2026-09-08T17:37:40.181Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 10,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 4,
+    "match_score": "6.00",
+    "reasoning": "**6.0% match** for **Cloud DevOps & Platform Engineer** (Technology & Software Engineering). ✓ Demonstrates foundational alignment through academic profile and interests. ○ **Skill gaps to bridge:** Linux, Docker, CI/CD Pipelines.",
+    "source_assessment": 1,
+    "generated_at": "2026-09-08T17:37:40.231Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 11,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 3,
+    "match_score": "14.20",
+    "reasoning": "**14.2% match** for **Data Scientist** (Data & Artificial Intelligence). ✓ Demonstrates foundational alignment through academic profile and interests. ○ **Skill gaps to bridge:** Python, Statistics, SQL.",
+    "source_assessment": 1,
+    "generated_at": "2026-09-08T17:37:40.274Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 12,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 2,
+    "match_score": "5.90",
+    "reasoning": "**5.9% match** for **Full-Stack Software Engineer** (Technology & Software Engineering). ✓ **Key strengths aligned:** JavaScript. ○ **Skill gaps to bridge:** React, REST APIs, Data Structures & Algorithms.",
+    "source_assessment": 1,
+    "generated_at": "2026-09-08T17:37:40.309Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 13,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 1,
+    "match_score": "32.70",
+    "reasoning": "**32.7% match** for **AI / Machine Learning Engineer** (Data & Artificial Intelligence). Your psychometric assessment demonstrated strong aptitude and interest in the Data & Artificial Intelligence domain. ✓ **Key strengths aligned:** TensorFlow. ○ **Skill gaps to bridge:** Python, Machine Learning, NumPy.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-08T18:25:34.521Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 14,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 4,
+    "match_score": "17.90",
+    "reasoning": "**17.9% match** for **Cloud DevOps & Platform Engineer** (Technology & Software Engineering). Your psychometric assessment demonstrated strong aptitude and interest in the Technology & Software Engineering domain. ○ **Skill gaps to bridge:** Linux, Docker, CI/CD Pipelines.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-08T18:25:34.556Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 15,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 3,
+    "match_score": "33.20",
+    "reasoning": "**33.2% match** for **Data Scientist** (Data & Artificial Intelligence). Your psychometric assessment demonstrated strong aptitude and interest in the Data & Artificial Intelligence domain. ○ **Skill gaps to bridge:** Python, Statistics, SQL.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-08T18:25:34.588Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 16,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 2,
+    "match_score": "23.80",
+    "reasoning": "**23.8% match** for **Full-Stack Software Engineer** (Technology & Software Engineering). Your psychometric assessment demonstrated strong aptitude and interest in the Technology & Software Engineering domain. ✓ **Key strengths aligned:** JavaScript. ○ **Skill gaps to bridge:** React, REST APIs, Data Structures & Algorithms.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-08T18:25:34.628Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 52,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 6,
+    "match_score": "10.00",
+    "reasoning": "**10.0% match** for **Cloud Solutions Architect** (Cloud Computing). Your psychometric assessment demonstrated strong aptitude and interest in the Cloud Computing domain. ○ **Skill gaps to bridge:** AWS, System Design, Docker.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-09T14:03:44.030Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 53,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 5,
+    "match_score": "10.00",
+    "reasoning": "**10.0% match** for **Cyber Security Analyst** (Cyber Security). Your psychometric assessment demonstrated strong aptitude and interest in the Cyber Security domain. ○ **Skill gaps to bridge:** Network Security, Linux, Ethical Hacking.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-09T14:03:44.059Z"
+  }
+},
+{
+  "model": "career.careerrecommendation",
+  "pk": 54,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 7,
+    "match_score": "10.00",
+    "reasoning": "**10.0% match** for **UI/UX & Product Designer** (UI&UX DESIGN). Your psychometric assessment demonstrated strong aptitude and interest in the UI&UX DESIGN domain. ○ **Skill gaps to bridge:** Figma, Wireframing, Prototyping.",
+    "source_assessment": 2,
+    "generated_at": "2026-09-09T14:03:44.113Z"
+  }
+},
+{
+  "model": "career.skillgapanalysis",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 1,
+    "readiness_score": "6.06",
+    "total_skills_count": 12,
+    "strong_count": 1,
+    "minor_count": 0,
+    "moderate_count": 0,
+    "major_count": 7,
+    "critical_count": 4,
+    "gaps_data": [
+      {
+        "skill_id": 1,
+        "name": "Python",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 510.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 2,
+        "name": "Machine Learning",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 480.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 6,
+        "name": "NumPy",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 288.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 7,
+        "name": "Pandas",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 288.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 5,
+        "name": "Deep Learning",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 8,
+        "name": "SQL",
+        "category": "Databases",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 9,
+        "name": "Statistics",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 10,
+        "name": "PyTorch",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 70,
+        "gap": 70,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 252.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 4,
+        "name": "Communication",
+        "category": "soft",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 202.5,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 11,
+        "name": "TensorFlow",
+        "category": "Data Science & AI",
+        "current_proficiency": 65,
+        "required_proficiency": 70,
+        "gap": 5,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 13.5,
+        "status": "Strong",
+        "variant": "success"
+      },
+      {
+        "skill_id": 12,
+        "name": "MLOps",
+        "category": "Cloud & DevOps",
+        "current_proficiency": 0,
+        "required_proficiency": 65,
+        "gap": 65,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 175.5,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 13,
+        "name": "Docker",
+        "category": "Cloud & DevOps",
+        "current_proficiency": 0,
+        "required_proficiency": 65,
+        "gap": 65,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 175.5,
+        "status": "Major Gap",
+        "variant": "danger"
+      }
+    ],
+    "priority_skills": [
+      {
+        "skill_id": 1,
+        "name": "Python",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 510.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 2,
+        "name": "Machine Learning",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 480.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 5,
+        "name": "Deep Learning",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 8,
+        "name": "SQL",
+        "category": "Databases",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 9,
+        "name": "Statistics",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      }
+    ],
+    "category_summary": [
+      {
+        "category": "technical",
+        "current_avg": 0.0,
+        "required_avg": 82.5
+      },
+      {
+        "category": "Data Science & AI",
+        "current_avg": 10.8,
+        "required_avg": 75.0
+      },
+      {
+        "category": "Databases",
+        "current_avg": 0.0,
+        "required_avg": 75.0
+      },
+      {
+        "category": "soft",
+        "current_avg": 0.0,
+        "required_avg": 75.0
+      },
+      {
+        "category": "Cloud & DevOps",
+        "current_avg": 0.0,
+        "required_avg": 65.0
+      }
+    ],
+    "ai_explanation": "### Career Readiness Analysis for AI / Machine Learning Engineer\nYour current career readiness is **6.06%**. You have demonstrated proficiency in **1 of 12** core skills required for this role.\n\n#### Biggest Growth Area: Python\n- **Target Requirement:** 85%\n- **Current Level:** 0% (Skill Gap: **85%**)\n- **Why it matters:** Python is a foundational pillar for AI / Machine Learning Engineer. Closing this gap directly boosts your career readiness by up to 15%.\n\n#### Recommended Learning Sequence:\n1. **Python**: Master fundamental concepts, practical syntax, and mini-exercises.\n2. **Machine Learning**: Progress to applied exercises and real-world integration.\n3. **Deep Learning**: Combine into portfolio-grade capstone projects.\n\nYour personalized roadmap below has been dynamically customized to guide you through these priority skills step by step.",
+    "created_at": "2026-09-07T18:03:17.748Z",
+    "updated_at": "2026-09-09T14:04:18.851Z"
+  }
+},
+{
+  "model": "career.skillgapanalysis",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "career_path": 1,
+    "readiness_score": "61.17",
+    "total_skills_count": 12,
+    "strong_count": 4,
+    "minor_count": 3,
+    "moderate_count": 2,
+    "major_count": 3,
+    "critical_count": 0,
+    "gaps_data": [
+      {
+        "skill_id": 1,
+        "name": "Python",
+        "category": "technical",
+        "current_proficiency": 82,
+        "required_proficiency": 85,
+        "gap": 3,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 18.0,
+        "status": "Strong",
+        "variant": "success"
+      },
+      {
+        "skill_id": 2,
+        "name": "Machine Learning",
+        "category": "technical",
+        "current_proficiency": 68,
+        "required_proficiency": 80,
+        "gap": 12,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 72.0,
+        "status": "Minor Gap",
+        "variant": "info"
+      },
+      {
+        "skill_id": 6,
+        "name": "NumPy",
+        "category": "Data Science & AI",
+        "current_proficiency": 70,
+        "required_proficiency": 80,
+        "gap": 10,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 36.0,
+        "status": "Strong",
+        "variant": "success"
+      },
+      {
+        "skill_id": 7,
+        "name": "Pandas",
+        "category": "Data Science & AI",
+        "current_proficiency": 75,
+        "required_proficiency": 80,
+        "gap": 5,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 18.0,
+        "status": "Strong",
+        "variant": "success"
+      },
+      {
+        "skill_id": 5,
+        "name": "Deep Learning",
+        "category": "Data Science & AI",
+        "current_proficiency": 32,
+        "required_proficiency": 75,
+        "gap": 43,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 206.4,
+        "status": "Moderate Gap",
+        "variant": "warning"
+      },
+      {
+        "skill_id": 8,
+        "name": "SQL",
+        "category": "Databases",
+        "current_proficiency": 55,
+        "required_proficiency": 75,
+        "gap": 20,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 96.0,
+        "status": "Minor Gap",
+        "variant": "info"
+      },
+      {
+        "skill_id": 9,
+        "name": "Statistics",
+        "category": "Data Science & AI",
+        "current_proficiency": 61,
+        "required_proficiency": 75,
+        "gap": 14,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 67.2,
+        "status": "Minor Gap",
+        "variant": "info"
+      },
+      {
+        "skill_id": 10,
+        "name": "PyTorch",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 70,
+        "gap": 70,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 252.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 4,
+        "name": "Communication",
+        "category": "soft",
+        "current_proficiency": 75,
+        "required_proficiency": 75,
+        "gap": 0,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 0.0,
+        "status": "Strong",
+        "variant": "success"
+      },
+      {
+        "skill_id": 11,
+        "name": "TensorFlow",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 70,
+        "gap": 70,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 189.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 12,
+        "name": "MLOps",
+        "category": "Cloud & DevOps",
+        "current_proficiency": 0,
+        "required_proficiency": 65,
+        "gap": 65,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 175.5,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 13,
+        "name": "Docker",
+        "category": "Cloud & DevOps",
+        "current_proficiency": 20,
+        "required_proficiency": 65,
+        "gap": 45,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 121.5,
+        "status": "Moderate Gap",
+        "variant": "warning"
+      }
+    ],
+    "priority_skills": [
+      {
+        "skill_id": 10,
+        "name": "PyTorch",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 70,
+        "gap": 70,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 252.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 5,
+        "name": "Deep Learning",
+        "category": "Data Science & AI",
+        "current_proficiency": 32,
+        "required_proficiency": 75,
+        "gap": 43,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 206.4,
+        "status": "Moderate Gap",
+        "variant": "warning"
+      },
+      {
+        "skill_id": 11,
+        "name": "TensorFlow",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 70,
+        "gap": 70,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 189.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 12,
+        "name": "MLOps",
+        "category": "Cloud & DevOps",
+        "current_proficiency": 0,
+        "required_proficiency": 65,
+        "gap": 65,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 175.5,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 13,
+        "name": "Docker",
+        "category": "Cloud & DevOps",
+        "current_proficiency": 20,
+        "required_proficiency": 65,
+        "gap": 45,
+        "importance": 3,
+        "is_core": false,
+        "priority_score": 121.5,
+        "status": "Moderate Gap",
+        "variant": "warning"
+      }
+    ],
+    "category_summary": [
+      {
+        "category": "technical",
+        "current_avg": 75.0,
+        "required_avg": 82.5
+      },
+      {
+        "category": "Data Science & AI",
+        "current_avg": 39.7,
+        "required_avg": 75.0
+      },
+      {
+        "category": "Databases",
+        "current_avg": 55.0,
+        "required_avg": 75.0
+      },
+      {
+        "category": "soft",
+        "current_avg": 75.0,
+        "required_avg": 75.0
+      },
+      {
+        "category": "Cloud & DevOps",
+        "current_avg": 10.0,
+        "required_avg": 65.0
+      }
+    ],
+    "ai_explanation": "### Career Readiness Analysis for AI / Machine Learning Engineer\nYour current career readiness is **61.17%**. You have demonstrated proficiency in **4 of 12** core skills required for this role.\n\n#### Biggest Growth Area: PyTorch\n- **Target Requirement:** 70%\n- **Current Level:** 0% (Skill Gap: **70%**)\n- **Why it matters:** PyTorch is a foundational pillar for AI / Machine Learning Engineer. Closing this gap directly boosts your career readiness by up to 15%.\n\n#### Recommended Learning Sequence:\n1. **PyTorch**: Master fundamental concepts, practical syntax, and mini-exercises.\n2. **Deep Learning**: Progress to applied exercises and real-world integration.\n3. **TensorFlow**: Combine into portfolio-grade capstone projects.\n\nYour personalized roadmap below has been dynamically customized to guide you through these priority skills step by step.",
+    "created_at": "2026-09-07T18:45:23.129Z",
+    "updated_at": "2026-09-07T18:45:23.129Z"
+  }
+},
+{
+  "model": "career.skillgapanalysis",
+  "pk": 4,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 5,
+    "readiness_score": "0.00",
+    "total_skills_count": 7,
+    "strong_count": 0,
+    "minor_count": 0,
+    "moderate_count": 0,
+    "major_count": 3,
+    "critical_count": 4,
+    "gaps_data": [
+      {
+        "skill_id": 31,
+        "name": "Network Security",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 510.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 21,
+        "name": "Linux",
+        "category": "Operating Systems",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 480.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 33,
+        "name": "Ethical Hacking",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 480.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 25,
+        "name": "Problem Solving",
+        "category": "Soft Skills",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 288.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 32,
+        "name": "Cryptography",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 1,
+        "name": "Python",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 34,
+        "name": "SIEM",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 70,
+        "gap": 70,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 252.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      }
+    ],
+    "priority_skills": [
+      {
+        "skill_id": 31,
+        "name": "Network Security",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 510.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 21,
+        "name": "Linux",
+        "category": "Operating Systems",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 480.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 33,
+        "name": "Ethical Hacking",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 480.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 32,
+        "name": "Cryptography",
+        "category": "Security",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 1,
+        "name": "Python",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      }
+    ],
+    "category_summary": [
+      {
+        "category": "Security",
+        "current_avg": 0.0,
+        "required_avg": 77.5
+      },
+      {
+        "category": "Operating Systems",
+        "current_avg": 0.0,
+        "required_avg": 80.0
+      },
+      {
+        "category": "Soft Skills",
+        "current_avg": 0.0,
+        "required_avg": 80.0
+      },
+      {
+        "category": "technical",
+        "current_avg": 0.0,
+        "required_avg": 75.0
+      }
+    ],
+    "ai_explanation": "### Career Readiness Analysis for Cyber Security Analyst\nYour current career readiness is **0.0%**. You have demonstrated proficiency in **0 of 7** core skills required for this role.\n\n#### Biggest Growth Area: Network Security\n- **Target Requirement:** 85%\n- **Current Level:** 0% (Skill Gap: **85%**)\n- **Why it matters:** Network Security is a foundational pillar for Cyber Security Analyst. Closing this gap directly boosts your career readiness by up to 15%.\n\n#### Recommended Learning Sequence:\n1. **Network Security**: Master fundamental concepts, practical syntax, and mini-exercises.\n2. **Linux**: Progress to applied exercises and real-world integration.\n3. **Ethical Hacking**: Combine into portfolio-grade capstone projects.\n\nYour personalized roadmap below has been dynamically customized to guide you through these priority skills step by step.",
+    "created_at": "2026-09-09T14:04:16.431Z",
+    "updated_at": "2026-09-09T14:04:16.431Z"
+  }
+},
+{
+  "model": "career.skillgapanalysis",
+  "pk": 7,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 3,
+    "readiness_score": "28.31",
+    "total_skills_count": 8,
+    "strong_count": 0,
+    "minor_count": 1,
+    "moderate_count": 2,
+    "major_count": 1,
+    "critical_count": 4,
+    "gaps_data": [
+      {
+        "skill_id": 1,
+        "name": "Python",
+        "category": "technical",
+        "current_proficiency": 55,
+        "required_proficiency": 85,
+        "gap": 30,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 180.0,
+        "status": "Moderate Gap",
+        "variant": "warning"
+      },
+      {
+        "skill_id": 9,
+        "name": "Statistics",
+        "category": "Data Science & AI",
+        "current_proficiency": 55,
+        "required_proficiency": 85,
+        "gap": 30,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 180.0,
+        "status": "Moderate Gap",
+        "variant": "warning"
+      },
+      {
+        "skill_id": 8,
+        "name": "SQL",
+        "category": "Databases",
+        "current_proficiency": 55,
+        "required_proficiency": 80,
+        "gap": 25,
+        "importance": 5,
+        "is_core": true,
+        "priority_score": 150.0,
+        "status": "Minor Gap",
+        "variant": "info"
+      },
+      {
+        "skill_id": 7,
+        "name": "Pandas",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 408.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 14,
+        "name": "Data Analysis",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 408.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 6,
+        "name": "NumPy",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 384.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 4,
+        "name": "Communication",
+        "category": "soft",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 288.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 2,
+        "name": "Machine Learning",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      }
+    ],
+    "priority_skills": [
+      {
+        "skill_id": 7,
+        "name": "Pandas",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 408.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 14,
+        "name": "Data Analysis",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 85,
+        "gap": 85,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 408.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 6,
+        "name": "NumPy",
+        "category": "Data Science & AI",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 384.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      },
+      {
+        "skill_id": 2,
+        "name": "Machine Learning",
+        "category": "technical",
+        "current_proficiency": 0,
+        "required_proficiency": 75,
+        "gap": 75,
+        "importance": 4,
+        "is_core": true,
+        "priority_score": 360.0,
+        "status": "Major Gap",
+        "variant": "danger"
+      },
+      {
+        "skill_id": 4,
+        "name": "Communication",
+        "category": "soft",
+        "current_proficiency": 0,
+        "required_proficiency": 80,
+        "gap": 80,
+        "importance": 4,
+        "is_core": false,
+        "priority_score": 288.0,
+        "status": "Critical Gap",
+        "variant": "critical"
+      }
+    ],
+    "category_summary": [
+      {
+        "category": "technical",
+        "current_avg": 27.5,
+        "required_avg": 80.0
+      },
+      {
+        "category": "Data Science & AI",
+        "current_avg": 13.8,
+        "required_avg": 83.8
+      },
+      {
+        "category": "Databases",
+        "current_avg": 55.0,
+        "required_avg": 80.0
+      },
+      {
+        "category": "soft",
+        "current_avg": 0.0,
+        "required_avg": 80.0
+      }
+    ],
+    "ai_explanation": "### Career Readiness Analysis for Data Scientist\nYour current career readiness is **28.31%**. You have demonstrated proficiency in **0 of 8** core skills required for this role.\n\n#### Biggest Growth Area: Pandas\n- **Target Requirement:** 85%\n- **Current Level:** 0% (Skill Gap: **85%**)\n- **Why it matters:** Pandas is a foundational pillar for Data Scientist. Closing this gap directly boosts your career readiness by up to 15%.\n\n#### Recommended Learning Sequence:\n1. **Pandas**: Master fundamental concepts, practical syntax, and mini-exercises.\n2. **Data Analysis**: Progress to applied exercises and real-world integration.\n3. **NumPy**: Combine into portfolio-grade capstone projects.\n\nYour personalized roadmap below has been dynamically customized to guide you through these priority skills step by step.",
+    "created_at": "2026-09-10T05:02:43.586Z",
+    "updated_at": "2026-09-10T05:04:38.863Z"
+  }
+},
+{
+  "model": "learning.subject",
+  "pk": 1,
+  "fields": {
+    "name": "Computer Science",
+    "description": "Programming, algorithms, software engineering, and more."
+  }
+},
+{
+  "model": "learning.subject",
+  "pk": 2,
+  "fields": {
+    "name": "Data Science & AI",
+    "description": "Machine learning, statistics, and artificial intelligence."
+  }
+},
+{
+  "model": "learning.subject",
+  "pk": 3,
+  "fields": {
+    "name": "Mathematics",
+    "description": "Pure and applied mathematics for competitive exams and beyond."
+  }
+},
+{
+  "model": "learning.subject",
+  "pk": 4,
+  "fields": {
+    "name": "Physics",
+    "description": "Mechanics, electromagnetism, optics, and modern physics."
+  }
+},
+{
+  "model": "learning.subject",
+  "pk": 5,
+  "fields": {
+    "name": "Commerce & Finance",
+    "description": "Accounting, economics, and business fundamentals."
+  }
+},
+{
+  "model": "learning.subject",
+  "pk": 6,
+  "fields": {
+    "name": "Biology & Life Sciences",
+    "description": "Cell biology, genetics, ecology, and medical prep."
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 1,
+  "fields": {
+    "title": "Python for Beginners",
+    "description": "Learn Python programming from scratch — variables, loops, functions, and OOP.",
+    "subject": 1,
+    "level": "beginner",
+    "duration_hours": 20,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.504Z",
+    "updated_at": "2026-08-30T11:11:50.504Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 2,
+  "fields": {
+    "title": "Data Structures & Algorithms",
+    "description": "Master arrays, linked lists, trees, graphs, sorting, and dynamic programming for placements.",
+    "subject": 1,
+    "level": "intermediate",
+    "duration_hours": 40,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.507Z",
+    "updated_at": "2026-08-30T11:11:50.507Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 3,
+  "fields": {
+    "title": "Machine Learning Fundamentals",
+    "description": "Understand supervised, unsupervised learning, model evaluation, and scikit-learn.",
+    "subject": 2,
+    "level": "intermediate",
+    "duration_hours": 35,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.509Z",
+    "updated_at": "2026-08-30T11:11:50.509Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 4,
+  "fields": {
+    "title": "Deep Learning with PyTorch",
+    "description": "Build neural networks, CNNs, RNNs and Transformers using PyTorch.",
+    "subject": 2,
+    "level": "advanced",
+    "duration_hours": 50,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.512Z",
+    "updated_at": "2026-08-30T11:11:50.512Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 5,
+  "fields": {
+    "title": "JEE Mathematics — Calculus",
+    "description": "Complete calculus preparation covering limits, derivatives, integration, and differential equations.",
+    "subject": 3,
+    "level": "advanced",
+    "duration_hours": 60,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.514Z",
+    "updated_at": "2026-08-30T11:11:50.514Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 6,
+  "fields": {
+    "title": "Class 12 Physics — Waves & Optics",
+    "description": "In-depth study of wave nature of light, interference, diffraction, and polarisation.",
+    "subject": 4,
+    "level": "intermediate",
+    "duration_hours": 30,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.516Z",
+    "updated_at": "2026-08-30T11:11:50.516Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 7,
+  "fields": {
+    "title": "Accountancy for Class 12",
+    "description": "Partnership accounts, company accounts, and financial statements — complete CBSE guide.",
+    "subject": 5,
+    "level": "beginner",
+    "duration_hours": 25,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.518Z",
+    "updated_at": "2026-08-30T11:11:50.518Z"
+  }
+},
+{
+  "model": "learning.course",
+  "pk": 8,
+  "fields": {
+    "title": "NEET Biology — Human Physiology",
+    "description": "Digestive, circulatory, respiratory, and nervous systems — NEET level coverage.",
+    "subject": 6,
+    "level": "advanced",
+    "duration_hours": 45,
+    "thumbnail": "",
+    "created_by": null,
+    "is_published": true,
+    "created_at": "2026-08-30T11:11:50.519Z",
+    "updated_at": "2026-08-30T11:11:50.520Z"
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Intro to Python - Video Series",
+    "resource_type": "video",
+    "url": "https://youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Python Cheatsheet PDF",
+    "resource_type": "pdf",
+    "url": "https://perso.limsi.fr/pointal/python:memento",
+    "file": "",
+    "content": null,
+    "order": 1
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 3,
+  "fields": {
+    "course": 2,
+    "title": "DSA Full Course",
+    "resource_type": "video",
+    "url": "https://youtu.be/8hly31xKli0",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 4,
+  "fields": {
+    "course": 3,
+    "title": "ML Crash Course by Google",
+    "resource_type": "link",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 5,
+  "fields": {
+    "course": 4,
+    "title": "PyTorch Official Tutorials",
+    "resource_type": "link",
+    "url": "https://pytorch.org/tutorials/",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 6,
+  "fields": {
+    "course": 5,
+    "title": "NCERT Solutions - Mathematics",
+    "resource_type": "pdf",
+    "url": "https://ncert.nic.in/textbook.php",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 7,
+  "fields": {
+    "course": 6,
+    "title": "Physics Wallah — Waves & Optics",
+    "resource_type": "video",
+    "url": "https://youtube.com/@PhysicsWallah",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.learningresource",
+  "pk": 8,
+  "fields": {
+    "course": 8,
+    "title": "NCERT Biology Textbook",
+    "resource_type": "pdf",
+    "url": "https://ncert.nic.in/textbook.php?kebo1=0-22",
+    "file": "",
+    "content": null,
+    "order": 0
+  }
+},
+{
+  "model": "learning.scholarship",
+  "pk": 1,
+  "fields": {
+    "name": "National Scholarship Portal — PM Scholarship",
+    "provider": "Ministry of Education, Govt. of India",
+    "description": "Central sector scholarship for meritorious students pursuing higher education.",
+    "scholarship_type": "merit",
+    "amount": "12000.00",
+    "eligibility": "Students who cleared Class 12 in the top 20 percentile of their respective boards.",
+    "deadline": null,
+    "application_url": "https://scholarships.gov.in",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.525Z"
+  }
+},
+{
+  "model": "learning.scholarship",
+  "pk": 2,
+  "fields": {
+    "name": "Post-Matric Scholarship for SC/ST/OBC",
+    "provider": "Ministry of Social Justice, Govt. of India",
+    "description": "Financial assistance to SC, ST, and OBC students for post-matric and post-secondary education.",
+    "scholarship_type": "government",
+    "amount": "30000.00",
+    "eligibility": "SC/ST/OBC students with family income below ₹2.5 lakh per annum.",
+    "deadline": null,
+    "application_url": "https://scholarships.gov.in",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.529Z"
+  }
+},
+{
+  "model": "learning.scholarship",
+  "pk": 3,
+  "fields": {
+    "name": "Aicte Pragati Scholarship (Girls)",
+    "provider": "AICTE",
+    "description": "Scholarship for girl students admitted to AICTE-approved institutions for technical education.",
+    "scholarship_type": "merit",
+    "amount": "30000.00",
+    "eligibility": "Girl students in 1st year of Diploma/Degree in AICTE-approved institutions.",
+    "deadline": null,
+    "application_url": "https://scholarships.gov.in/fresh/loginPage",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.529Z"
+  }
+},
+{
+  "model": "learning.scholarship",
+  "pk": 4,
+  "fields": {
+    "name": "Tata Capital Pankh Scholarship",
+    "provider": "Tata Capital Limited",
+    "description": "Supports underprivileged students from Classes 6–12 and undergraduates pursuing professional courses.",
+    "scholarship_type": "need",
+    "amount": "15000.00",
+    "eligibility": "Students with family income below ₹4 lakh p.a. and above 60% in last exam.",
+    "deadline": null,
+    "application_url": "https://www.b4s.in/tatacapital/TPN7",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.529Z"
+  }
+},
+{
+  "model": "learning.scholarship",
+  "pk": 5,
+  "fields": {
+    "name": "Inspire Scholarship — DST",
+    "provider": "Department of Science & Technology, Govt. of India",
+    "description": "Scholarships for students pursuing natural and basic sciences at the undergraduate and postgraduate level.",
+    "scholarship_type": "merit",
+    "amount": "80000.00",
+    "eligibility": "Top 1% in Class 12 board exams pursuing BSc / BS / Int. MSc in Natural Sciences.",
+    "deadline": null,
+    "application_url": "https://www.online-inspire.gov.in/",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.529Z"
+  }
+},
+{
+  "model": "learning.scholarship",
+  "pk": 6,
+  "fields": {
+    "name": "Sitaram Jindal Foundation Scholarship",
+    "provider": "Sitaram Jindal Foundation",
+    "description": "Monthly stipend for meritorious and needy students across various streams.",
+    "scholarship_type": "need",
+    "amount": "24000.00",
+    "eligibility": "Students above 60% marks and family income below ₹2.5 lakh p.a.",
+    "deadline": null,
+    "application_url": "https://www.sitaramjindalfoundation.org/scholarship.php",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.534Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 1,
+  "fields": {
+    "name": "Indian Institute of Technology, Bombay",
+    "location": "Mumbai, Maharashtra",
+    "college_type": "iit",
+    "affiliation": "Autonomous — UGC",
+    "ranking": 3,
+    "website": "https://www.iitb.ac.in/",
+    "established_year": 1958,
+    "description": "One of the premier engineering institutions in India, known for research and innovation.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.536Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 2,
+  "fields": {
+    "name": "Indian Institute of Technology, Delhi",
+    "location": "New Delhi, Delhi",
+    "college_type": "iit",
+    "affiliation": "Autonomous — UGC",
+    "ranking": 2,
+    "website": "https://home.iitd.ac.in/",
+    "established_year": 1961,
+    "description": "Leading science and technology institute offering undergraduate, postgraduate, and doctoral programs.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.538Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 3,
+  "fields": {
+    "name": "National Institute of Technology, Trichy",
+    "location": "Tiruchirappalli, Tamil Nadu",
+    "college_type": "nit",
+    "affiliation": "Deemed University — UGC",
+    "ranking": 8,
+    "website": "https://www.nitt.edu/",
+    "established_year": 1964,
+    "description": "One of the oldest and most reputed NITs, known for engineering programs and campus culture.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.539Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 4,
+  "fields": {
+    "name": "BITS Pilani",
+    "location": "Pilani, Rajasthan",
+    "college_type": "deemed",
+    "affiliation": "Deemed University",
+    "ranking": 26,
+    "website": "https://www.bits-pilani.ac.in/",
+    "established_year": 1964,
+    "description": "Top-ranked private technical university with campuses in Pilani, Goa, Hyderabad, and Dubai.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.541Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 5,
+  "fields": {
+    "name": "Jadavpur University",
+    "location": "Kolkata, West Bengal",
+    "college_type": "state",
+    "affiliation": "State University",
+    "ranking": 12,
+    "website": "https://jadavpuruniversity.in/",
+    "established_year": 1955,
+    "description": "Premier state university offering engineering, arts, and science programs with strong research output.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.542Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 6,
+  "fields": {
+    "name": "IIIT Hyderabad",
+    "location": "Hyderabad, Telangana",
+    "college_type": "iiit",
+    "affiliation": "Deemed University",
+    "ranking": 48,
+    "website": "https://www.iiit.ac.in/",
+    "established_year": 1998,
+    "description": "Specialised institute focused on computer science and information technology research.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.543Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 7,
+  "fields": {
+    "name": "Delhi University — North Campus",
+    "location": "New Delhi, Delhi",
+    "college_type": "central",
+    "affiliation": "Central University",
+    "ranking": 11,
+    "website": "https://www.du.ac.in/",
+    "established_year": 1922,
+    "description": "One of India's largest universities offering arts, science, commerce, and law programs.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.543Z"
+  }
+},
+{
+  "model": "learning.college",
+  "pk": 8,
+  "fields": {
+    "name": "Vellore Institute of Technology (VIT)",
+    "location": "Vellore, Tamil Nadu",
+    "college_type": "deemed",
+    "affiliation": "Deemed University",
+    "ranking": 11,
+    "website": "https://vit.ac.in/",
+    "established_year": 1984,
+    "description": "Large private deemed university known for engineering and technology programs.",
+    "is_active": true,
+    "created_at": "2026-08-30T11:11:50.544Z"
+  }
+},
+{
+  "model": "learning.learningroadmap",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 1,
+    "title": "Personalized Path to AI / Machine Learning Engineer",
+    "overall_progress": 0,
+    "active_phase": 1,
+    "phases_data": [
+      {
+        "phase_number": 1,
+        "title": "Foundations & Core Prerequisites",
+        "color": "iris"
+      },
+      {
+        "phase_number": 2,
+        "title": "Core Domain & Applied Frameworks",
+        "color": "cyan"
+      },
+      {
+        "phase_number": 3,
+        "title": "Advanced Architectures & Production",
+        "color": "marigold"
+      },
+      {
+        "phase_number": 4,
+        "title": "Capstone Portfolio & Interview Prep",
+        "color": "growth"
+      }
+    ],
+    "created_at": "2026-09-07T18:03:17.810Z",
+    "updated_at": "2026-09-07T18:04:09.927Z"
+  }
+},
+{
+  "model": "learning.learningroadmap",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "career_path": 3,
+    "title": "Personalized Path to Data Scientist",
+    "overall_progress": 0,
+    "active_phase": 1,
+    "phases_data": [
+      {
+        "phase_number": 1,
+        "title": "Foundations & Core Prerequisites",
+        "color": "iris"
+      },
+      {
+        "phase_number": 2,
+        "title": "Core Domain & Applied Frameworks",
+        "color": "cyan"
+      },
+      {
+        "phase_number": 3,
+        "title": "Advanced Architectures & Production",
+        "color": "marigold"
+      },
+      {
+        "phase_number": 4,
+        "title": "Capstone Portfolio & Interview Prep",
+        "color": "growth"
+      }
+    ],
+    "created_at": "2026-09-10T05:02:44.514Z",
+    "updated_at": "2026-09-10T05:02:44.755Z"
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 9,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 1,
+    "phase_title": "Foundations & Core Prerequisites",
+    "title": "Master Python Fundamentals",
+    "skill": 1,
+    "difficulty": "beginner",
+    "estimated_hours": 6,
+    "course": 1,
+    "quiz": null,
+    "description": "Build strong command over Python essentials, syntax, and foundational idioms.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Complete Python Cheatsheet & Documentation"
+      },
+      {
+        "type": "video",
+        "title": "Core Concepts of Python in 45 Minutes"
+      }
+    ],
+    "practice_tasks": [
+      "Solve 5 practice problems on Python",
+      "Implement mini code snippet demonstrating key Python patterns"
+    ],
+    "mini_project": "Create a basic CLI or script in Python demonstrating clean architecture.",
+    "status": "in_progress",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 1,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 10,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 1,
+    "phase_title": "Foundations & Core Prerequisites",
+    "title": "Master SQL Fundamentals",
+    "skill": 8,
+    "difficulty": "beginner",
+    "estimated_hours": 6,
+    "course": null,
+    "quiz": null,
+    "description": "Build strong command over SQL essentials, syntax, and foundational idioms.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Complete SQL Cheatsheet & Documentation"
+      },
+      {
+        "type": "video",
+        "title": "Core Concepts of SQL in 45 Minutes"
+      }
+    ],
+    "practice_tasks": [
+      "Solve 5 practice problems on SQL",
+      "Implement mini code snippet demonstrating key SQL patterns"
+    ],
+    "mini_project": "Create a basic CLI or script in SQL demonstrating clean architecture.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 2,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 11,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 2,
+    "phase_title": "Core Domain & Applied Frameworks",
+    "title": "Applied Machine Learning & Workflow Integration",
+    "skill": 2,
+    "difficulty": "intermediate",
+    "estimated_hours": 8,
+    "course": 3,
+    "quiz": null,
+    "description": "Apply Machine Learning to real-world domain problems with industry standard workflows.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Best Practices & Design Patterns in Machine Learning"
+      },
+      {
+        "type": "doc",
+        "title": "Machine Learning Real-world Case Studies"
+      }
+    ],
+    "practice_tasks": [
+      "Build modular component using Machine Learning",
+      "Optimize data flow and handle edge-case testing in Machine Learning"
+    ],
+    "mini_project": "Build an end-to-end working module utilizing Machine Learning.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 3,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 12,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 2,
+    "phase_title": "Core Domain & Applied Frameworks",
+    "title": "Applied NumPy & Workflow Integration",
+    "skill": 6,
+    "difficulty": "intermediate",
+    "estimated_hours": 8,
+    "course": null,
+    "quiz": null,
+    "description": "Apply NumPy to real-world domain problems with industry standard workflows.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Best Practices & Design Patterns in NumPy"
+      },
+      {
+        "type": "doc",
+        "title": "NumPy Real-world Case Studies"
+      }
+    ],
+    "practice_tasks": [
+      "Build modular component using NumPy",
+      "Optimize data flow and handle edge-case testing in NumPy"
+    ],
+    "mini_project": "Build an end-to-end working module utilizing NumPy.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 4,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 13,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 2,
+    "phase_title": "Core Domain & Applied Frameworks",
+    "title": "Applied Pandas & Workflow Integration",
+    "skill": 7,
+    "difficulty": "intermediate",
+    "estimated_hours": 8,
+    "course": null,
+    "quiz": null,
+    "description": "Apply Pandas to real-world domain problems with industry standard workflows.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Best Practices & Design Patterns in Pandas"
+      },
+      {
+        "type": "doc",
+        "title": "Pandas Real-world Case Studies"
+      }
+    ],
+    "practice_tasks": [
+      "Build modular component using Pandas",
+      "Optimize data flow and handle edge-case testing in Pandas"
+    ],
+    "mini_project": "Build an end-to-end working module utilizing Pandas.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 5,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 14,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 3,
+    "phase_title": "Advanced Architectures & Production",
+    "title": "Advanced Deep Learning & Production Deployment",
+    "skill": 5,
+    "difficulty": "advanced",
+    "estimated_hours": 10,
+    "course": 4,
+    "quiz": null,
+    "description": "Master complex architectures, performance tuning, and scalable practices in Deep Learning.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "High Performance Deep Learning in Production"
+      },
+      {
+        "type": "video",
+        "title": "Architecture Deep-Dive & Performance Optimization"
+      }
+    ],
+    "practice_tasks": [
+      "Design end-to-end pipeline in Deep Learning",
+      "Profile memory and execute unit tests for Deep Learning"
+    ],
+    "mini_project": "Production-ready deployment pipeline with containerization and automated testing.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 6,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 15,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 3,
+    "phase_title": "Advanced Architectures & Production",
+    "title": "Advanced PyTorch & Production Deployment",
+    "skill": 10,
+    "difficulty": "advanced",
+    "estimated_hours": 10,
+    "course": 4,
+    "quiz": null,
+    "description": "Master complex architectures, performance tuning, and scalable practices in PyTorch.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "High Performance PyTorch in Production"
+      },
+      {
+        "type": "video",
+        "title": "Architecture Deep-Dive & Performance Optimization"
+      }
+    ],
+    "practice_tasks": [
+      "Design end-to-end pipeline in PyTorch",
+      "Profile memory and execute unit tests for PyTorch"
+    ],
+    "mini_project": "Production-ready deployment pipeline with containerization and automated testing.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 7,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 16,
+  "fields": {
+    "roadmap": 1,
+    "phase_number": 3,
+    "phase_title": "Advanced Architectures & Production",
+    "title": "Advanced TensorFlow & Production Deployment",
+    "skill": 11,
+    "difficulty": "advanced",
+    "estimated_hours": 10,
+    "course": null,
+    "quiz": null,
+    "description": "Master complex architectures, performance tuning, and scalable practices in TensorFlow.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "High Performance TensorFlow in Production"
+      },
+      {
+        "type": "video",
+        "title": "Architecture Deep-Dive & Performance Optimization"
+      }
+    ],
+    "practice_tasks": [
+      "Design end-to-end pipeline in TensorFlow",
+      "Profile memory and execute unit tests for TensorFlow"
+    ],
+    "mini_project": "Production-ready deployment pipeline with containerization and automated testing.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 8,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 17,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 1,
+    "phase_title": "Foundations & Core Prerequisites",
+    "title": "Master Python Fundamentals",
+    "skill": 1,
+    "difficulty": "beginner",
+    "estimated_hours": 6,
+    "course": 1,
+    "quiz": null,
+    "description": "Build strong command over Python essentials, syntax, and foundational idioms.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Complete Python Cheatsheet & Documentation"
+      },
+      {
+        "type": "video",
+        "title": "Core Concepts of Python in 45 Minutes"
+      }
+    ],
+    "practice_tasks": [
+      "Solve 5 practice problems on Python",
+      "Implement mini code snippet demonstrating key Python patterns"
+    ],
+    "mini_project": "Create a basic CLI or script in Python demonstrating clean architecture.",
+    "status": "in_progress",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 1,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 18,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 1,
+    "phase_title": "Foundations & Core Prerequisites",
+    "title": "Master SQL Fundamentals",
+    "skill": 8,
+    "difficulty": "beginner",
+    "estimated_hours": 6,
+    "course": null,
+    "quiz": null,
+    "description": "Build strong command over SQL essentials, syntax, and foundational idioms.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Complete SQL Cheatsheet & Documentation"
+      },
+      {
+        "type": "video",
+        "title": "Core Concepts of SQL in 45 Minutes"
+      }
+    ],
+    "practice_tasks": [
+      "Solve 5 practice problems on SQL",
+      "Implement mini code snippet demonstrating key SQL patterns"
+    ],
+    "mini_project": "Create a basic CLI or script in SQL demonstrating clean architecture.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 2,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 19,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 2,
+    "phase_title": "Core Domain & Applied Frameworks",
+    "title": "Applied Statistics & Workflow Integration",
+    "skill": 9,
+    "difficulty": "intermediate",
+    "estimated_hours": 8,
+    "course": null,
+    "quiz": null,
+    "description": "Apply Statistics to real-world domain problems with industry standard workflows.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Best Practices & Design Patterns in Statistics"
+      },
+      {
+        "type": "doc",
+        "title": "Statistics Real-world Case Studies"
+      }
+    ],
+    "practice_tasks": [
+      "Build modular component using Statistics",
+      "Optimize data flow and handle edge-case testing in Statistics"
+    ],
+    "mini_project": "Build an end-to-end working module utilizing Statistics.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 3,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 20,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 2,
+    "phase_title": "Core Domain & Applied Frameworks",
+    "title": "Applied Pandas & Workflow Integration",
+    "skill": 7,
+    "difficulty": "intermediate",
+    "estimated_hours": 8,
+    "course": null,
+    "quiz": null,
+    "description": "Apply Pandas to real-world domain problems with industry standard workflows.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Best Practices & Design Patterns in Pandas"
+      },
+      {
+        "type": "doc",
+        "title": "Pandas Real-world Case Studies"
+      }
+    ],
+    "practice_tasks": [
+      "Build modular component using Pandas",
+      "Optimize data flow and handle edge-case testing in Pandas"
+    ],
+    "mini_project": "Build an end-to-end working module utilizing Pandas.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 4,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 21,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 2,
+    "phase_title": "Core Domain & Applied Frameworks",
+    "title": "Applied Data Analysis & Workflow Integration",
+    "skill": 14,
+    "difficulty": "intermediate",
+    "estimated_hours": 8,
+    "course": null,
+    "quiz": null,
+    "description": "Apply Data Analysis to real-world domain problems with industry standard workflows.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Best Practices & Design Patterns in Data Analysis"
+      },
+      {
+        "type": "doc",
+        "title": "Data Analysis Real-world Case Studies"
+      }
+    ],
+    "practice_tasks": [
+      "Build modular component using Data Analysis",
+      "Optimize data flow and handle edge-case testing in Data Analysis"
+    ],
+    "mini_project": "Build an end-to-end working module utilizing Data Analysis.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 5,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 22,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 3,
+    "phase_title": "Advanced Architectures & Production",
+    "title": "Advanced Data Analysis & Production Deployment",
+    "skill": 14,
+    "difficulty": "advanced",
+    "estimated_hours": 10,
+    "course": null,
+    "quiz": null,
+    "description": "Master complex architectures, performance tuning, and scalable practices in Data Analysis.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "High Performance Data Analysis in Production"
+      },
+      {
+        "type": "video",
+        "title": "Architecture Deep-Dive & Performance Optimization"
+      }
+    ],
+    "practice_tasks": [
+      "Design end-to-end pipeline in Data Analysis",
+      "Profile memory and execute unit tests for Data Analysis"
+    ],
+    "mini_project": "Production-ready deployment pipeline with containerization and automated testing.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 6,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 23,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 3,
+    "phase_title": "Advanced Architectures & Production",
+    "title": "Advanced NumPy & Production Deployment",
+    "skill": 6,
+    "difficulty": "advanced",
+    "estimated_hours": 10,
+    "course": null,
+    "quiz": null,
+    "description": "Master complex architectures, performance tuning, and scalable practices in NumPy.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "High Performance NumPy in Production"
+      },
+      {
+        "type": "video",
+        "title": "Architecture Deep-Dive & Performance Optimization"
+      }
+    ],
+    "practice_tasks": [
+      "Design end-to-end pipeline in NumPy",
+      "Profile memory and execute unit tests for NumPy"
+    ],
+    "mini_project": "Production-ready deployment pipeline with containerization and automated testing.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 7,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.roadmapitem",
+  "pk": 24,
+  "fields": {
+    "roadmap": 2,
+    "phase_number": 4,
+    "phase_title": "Capstone Portfolio & Interview Prep",
+    "title": "Comprehensive Data Scientist Portfolio Project",
+    "skill": 1,
+    "difficulty": "advanced",
+    "estimated_hours": 15,
+    "course": null,
+    "quiz": null,
+    "description": "Synthesize all skills into a showcase portfolio project demonstrating readiness for Data Scientist.",
+    "learning_resources": [
+      {
+        "type": "article",
+        "title": "Top 50 Technical Interview Questions for Data Scientist"
+      },
+      {
+        "type": "doc",
+        "title": "System Design & Coding Interview Strategy"
+      }
+    ],
+    "practice_tasks": [
+      "Draft architecture diagram and write comprehensive README",
+      "Deploy live project and publish code repository on GitHub",
+      "Conduct mock technical interview with DishaAI Assistant"
+    ],
+    "mini_project": "Production-grade Data Scientist Capstone Application.",
+    "status": "not_started",
+    "completion_percent": 0,
+    "prerequisites": null,
+    "order": 8,
+    "completed_at": null
+  }
+},
+{
+  "model": "learning.studentgamification",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "xp": 470,
+    "level": 7,
+    "level_title": "Active Explorer",
+    "current_streak": 4,
+    "longest_streak": 4,
+    "last_active_date": "2026-09-10",
+    "unlocked_badges": [
+      {
+        "id": "first_course",
+        "unlocked_at": "2026-09-07"
+      },
+      {
+        "id": "resume_pro",
+        "unlocked_at": "2026-09-07"
+      }
+    ]
+  }
+},
+{
+  "model": "learning.studentgamification",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "xp": 110,
+    "level": 2,
+    "level_title": "Motivated Student",
+    "current_streak": 1,
+    "longest_streak": 1,
+    "last_active_date": "2026-09-07",
+    "unlocked_badges": [
+      {
+        "id": "first_course",
+        "unlocked_at": "2026-09-07"
+      },
+      {
+        "id": "resume_pro",
+        "unlocked_at": "2026-09-07"
+      }
+    ]
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-07T18:03:29.703Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-07T18:03:34.195Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 3,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (91/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 1,
+      "score": 91
+    },
+    "created_at": "2026-09-07T18:06:17.714Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 4,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (91/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 2,
+      "score": 91
+    },
+    "created_at": "2026-09-07T18:06:20.622Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 5,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (54/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 3,
+      "score": 54
+    },
+    "created_at": "2026-09-07T18:06:39.404Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 6,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (54/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 4,
+      "score": 54
+    },
+    "created_at": "2026-09-07T18:06:41.740Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 7,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (94/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 5,
+      "score": 94
+    },
+    "created_at": "2026-09-07T18:45:22.990Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 8,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (94/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 6,
+      "score": 94
+    },
+    "created_at": "2026-09-07T18:46:34.849Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 9,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (100/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 7,
+      "score": 100
+    },
+    "created_at": "2026-09-07T19:05:39.931Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 10,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (100/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 8,
+      "score": 100
+    },
+    "created_at": "2026-09-07T19:05:51.797Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 11,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-08T13:33:48.793Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 12,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (66/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 9,
+      "score": 66
+    },
+    "created_at": "2026-09-08T13:35:23.150Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 13,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (94/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 10,
+      "score": 94
+    },
+    "created_at": "2026-09-08T13:37:10.595Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 14,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-08T17:35:48.603Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 15,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-08T18:09:32.258Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 16,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-09T14:03:29.034Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 17,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "project",
+    "title": "Analyzed Resume (78/100)",
+    "xp_awarded": 30,
+    "metadata": {
+      "resume_id": 13,
+      "score": 78
+    },
+    "created_at": "2026-09-09T14:06:27.842Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 18,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "daily",
+    "title": "Daily Learning Check-in",
+    "xp_awarded": 15,
+    "metadata": {},
+    "created_at": "2026-09-10T04:59:53.569Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 19,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "planner_task",
+    "title": "Study Goal Completed: Python: Integration & Testing",
+    "xp_awarded": 15,
+    "metadata": {
+      "task_id": 4,
+      "day": "Thursday"
+    },
+    "created_at": "2026-09-10T05:04:37.239Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 20,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "planner_task",
+    "title": "Study Goal Completed: Statistics: Modular Implementation & Patterns",
+    "xp_awarded": 15,
+    "metadata": {
+      "task_id": 3,
+      "day": "Wednesday"
+    },
+    "created_at": "2026-09-10T05:04:38.032Z"
+  }
+},
+{
+  "model": "learning.learningactivity",
+  "pk": 21,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "activity_type": "planner_task",
+    "title": "Study Goal Completed: SQL: Practical Exercises & Concepts",
+    "xp_awarded": 15,
+    "metadata": {
+      "task_id": 2,
+      "day": "Tuesday"
+    },
+    "created_at": "2026-09-10T05:04:38.790Z"
+  }
+},
+{
+  "model": "students.interest",
+  "pk": 1,
+  "fields": {
+    "name": "Coding & Algorithms"
+  }
+},
+{
+  "model": "students.interest",
+  "pk": 2,
+  "fields": {
+    "name": "Artificial Intelligence"
+  }
+},
+{
+  "model": "students.interest",
+  "pk": 3,
+  "fields": {
+    "name": "Stock Market & Investing"
+  }
+},
+{
+  "model": "students.interest",
+  "pk": 4,
+  "fields": {
+    "name": "UI/UX Design"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 1,
+  "fields": {
+    "name": "Python",
+    "category": "technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 2,
+  "fields": {
+    "name": "Machine Learning",
+    "category": "technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 3,
+  "fields": {
+    "name": "Web Development",
+    "category": "technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 4,
+  "fields": {
+    "name": "Communication",
+    "category": "soft"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 5,
+  "fields": {
+    "name": "Deep Learning",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 6,
+  "fields": {
+    "name": "NumPy",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 7,
+  "fields": {
+    "name": "Pandas",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 8,
+  "fields": {
+    "name": "SQL",
+    "category": "Databases"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 9,
+  "fields": {
+    "name": "Statistics",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 10,
+  "fields": {
+    "name": "PyTorch",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 11,
+  "fields": {
+    "name": "TensorFlow",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 12,
+  "fields": {
+    "name": "MLOps",
+    "category": "Cloud & DevOps"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 13,
+  "fields": {
+    "name": "Docker",
+    "category": "Cloud & DevOps"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 14,
+  "fields": {
+    "name": "Data Analysis",
+    "category": "Data Science & AI"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 15,
+  "fields": {
+    "name": "JavaScript",
+    "category": "Programming"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 16,
+  "fields": {
+    "name": "React",
+    "category": "Web Development"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 17,
+  "fields": {
+    "name": "Node.js",
+    "category": "Web Development"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 18,
+  "fields": {
+    "name": "REST APIs",
+    "category": "Web Development"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 19,
+  "fields": {
+    "name": "Data Structures & Algorithms",
+    "category": "Computer Science"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 20,
+  "fields": {
+    "name": "Git",
+    "category": "Cloud & DevOps"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 21,
+  "fields": {
+    "name": "Linux",
+    "category": "Operating Systems"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 22,
+  "fields": {
+    "name": "Kubernetes",
+    "category": "Cloud & DevOps"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 23,
+  "fields": {
+    "name": "AWS",
+    "category": "Cloud & DevOps"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 24,
+  "fields": {
+    "name": "CI/CD Pipelines",
+    "category": "Cloud & DevOps"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 25,
+  "fields": {
+    "name": "Problem Solving",
+    "category": "Soft Skills"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 26,
+  "fields": {
+    "name": "Artificial Intelligence",
+    "category": "Technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 27,
+  "fields": {
+    "name": "TypeScript",
+    "category": "Technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 28,
+  "fields": {
+    "name": "Go",
+    "category": "Technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 29,
+  "fields": {
+    "name": "R",
+    "category": "Technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 30,
+  "fields": {
+    "name": "data science",
+    "category": "technical"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 31,
+  "fields": {
+    "name": "Network Security",
+    "category": "Security"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 32,
+  "fields": {
+    "name": "Cryptography",
+    "category": "Security"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 33,
+  "fields": {
+    "name": "Ethical Hacking",
+    "category": "Security"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 34,
+  "fields": {
+    "name": "SIEM",
+    "category": "Security"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 35,
+  "fields": {
+    "name": "System Design",
+    "category": "Computer Science"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 36,
+  "fields": {
+    "name": "Figma",
+    "category": "Design"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 37,
+  "fields": {
+    "name": "User Research",
+    "category": "Design"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 38,
+  "fields": {
+    "name": "Wireframing",
+    "category": "Design"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 39,
+  "fields": {
+    "name": "Prototyping",
+    "category": "Design"
+  }
+},
+{
+  "model": "students.skill",
+  "pk": 40,
+  "fields": {
+    "name": "Design Systems",
+    "category": "Design"
+  }
+},
+{
+  "model": "students.studentprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "student"
+    ],
+    "gender": null,
+    "grade_or_class": null,
+    "school_or_college": null,
+    "bio": null,
+    "profile_picture": "",
+    "target_career": 1,
+    "created_at": "2026-08-30T11:35:58.961Z",
+    "updated_at": "2026-09-07T17:49:58.639Z",
+    "interests": []
+  }
+},
+{
+  "model": "students.studentprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "Haripriyan"
+    ],
+    "gender": null,
+    "grade_or_class": null,
+    "school_or_college": null,
+    "bio": null,
+    "profile_picture": "",
+    "target_career": null,
+    "created_at": "2026-09-04T06:06:43.132Z",
+    "updated_at": "2026-09-04T06:06:43.132Z",
+    "interests": []
+  }
+},
+{
+  "model": "students.studentprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "admin3"
+    ],
+    "gender": null,
+    "grade_or_class": null,
+    "school_or_college": null,
+    "bio": null,
+    "profile_picture": "",
+    "target_career": 3,
+    "created_at": "2026-09-04T08:16:27.775Z",
+    "updated_at": "2026-09-10T05:02:40.833Z",
+    "interests": []
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 1,
+  "fields": {
+    "student_profile": 1,
+    "skill": 1,
+    "proficiency": "advanced",
+    "proficiency_score": 82,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.691Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 2,
+  "fields": {
+    "student_profile": 1,
+    "skill": 2,
+    "proficiency": "intermediate",
+    "proficiency_score": 68,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.717Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 3,
+  "fields": {
+    "student_profile": 1,
+    "skill": 9,
+    "proficiency": "intermediate",
+    "proficiency_score": 61,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.732Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 4,
+  "fields": {
+    "student_profile": 1,
+    "skill": 8,
+    "proficiency": "intermediate",
+    "proficiency_score": 55,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.748Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 5,
+  "fields": {
+    "student_profile": 1,
+    "skill": 5,
+    "proficiency": "beginner",
+    "proficiency_score": 32,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.757Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 6,
+  "fields": {
+    "student_profile": 1,
+    "skill": 20,
+    "proficiency": "advanced",
+    "proficiency_score": 75,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.778Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 7,
+  "fields": {
+    "student_profile": 1,
+    "skill": 13,
+    "proficiency": "beginner",
+    "proficiency_score": 20,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.797Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 8,
+  "fields": {
+    "student_profile": 1,
+    "skill": 4,
+    "proficiency": "advanced",
+    "proficiency_score": 75,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.811Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 9,
+  "fields": {
+    "student_profile": 1,
+    "skill": 6,
+    "proficiency": "intermediate",
+    "proficiency_score": 70,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.827Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 10,
+  "fields": {
+    "student_profile": 1,
+    "skill": 7,
+    "proficiency": "advanced",
+    "proficiency_score": 75,
+    "source": "assessment",
+    "verified": false,
+    "last_updated": "2026-09-07T17:49:58.837Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 11,
+  "fields": {
+    "student_profile": 1,
+    "skill": 26,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-07T18:45:23.049Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 12,
+  "fields": {
+    "student_profile": 1,
+    "skill": 18,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-07T18:45:23.072Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 13,
+  "fields": {
+    "student_profile": 1,
+    "skill": 16,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-07T18:45:23.086Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 14,
+  "fields": {
+    "student_profile": 1,
+    "skill": 27,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-07T18:45:23.109Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 15,
+  "fields": {
+    "student_profile": 3,
+    "skill": 28,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-08T13:36:36.981Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 16,
+  "fields": {
+    "student_profile": 3,
+    "skill": 15,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-08T13:36:36.998Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 17,
+  "fields": {
+    "student_profile": 3,
+    "skill": 29,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-08T13:36:37.014Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 18,
+  "fields": {
+    "student_profile": 3,
+    "skill": 11,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-08T13:36:37.033Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 19,
+  "fields": {
+    "student_profile": 3,
+    "skill": 27,
+    "proficiency": "intermediate",
+    "proficiency_score": 65,
+    "source": "resume",
+    "verified": false,
+    "last_updated": "2026-09-08T13:36:37.047Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 32,
+  "fields": {
+    "student_profile": 3,
+    "skill": 1,
+    "proficiency": "intermediate",
+    "proficiency_score": 55,
+    "source": "course",
+    "verified": false,
+    "last_updated": "2026-09-10T05:04:37.296Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 33,
+  "fields": {
+    "student_profile": 3,
+    "skill": 9,
+    "proficiency": "intermediate",
+    "proficiency_score": 55,
+    "source": "course",
+    "verified": false,
+    "last_updated": "2026-09-10T05:04:38.080Z"
+  }
+},
+{
+  "model": "students.studentskill",
+  "pk": 34,
+  "fields": {
+    "student_profile": 3,
+    "skill": 8,
+    "proficiency": "intermediate",
+    "proficiency_score": 55,
+    "source": "course",
+    "verified": false,
+    "last_updated": "2026-09-10T05:04:38.831Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 1,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/Haripriyan_V_Resume.docx",
+    "file_name": "Haripriyan_V_Resume.docx",
+    "extracted_name": "Student Candidate",
+    "overall_score": 91,
+    "ats_score": 90,
+    "breakdown_scores": {
+      "skills": 99,
+      "experience": 80,
+      "projects": 85,
+      "education": 85,
+      "formatting": 100,
+      "ats_compatibility": 90
+    },
+    "extracted_skills": [
+      "python",
+      "javascript",
+      "java",
+      "c++",
+      "c#",
+      "react.js",
+      "html5",
+      "css3",
+      "node.js",
+      "express.js",
+      "django",
+      "django rest framework",
+      "rest",
+      "sql",
+      "mysql",
+      "postgresql",
+      "mongodb",
+      "machine learning",
+      "ml",
+      "deep learning",
+      "artificial intelligence",
+      "ai",
+      "data science",
+      "data analysis",
+      "numpy"
+    ],
+    "normalized_skills": [
+      "Agile / Scrum",
+      "Artificial Intelligence",
+      "C#",
+      "C++",
+      "CSS3",
+      "Data Analysis",
+      "Data Science",
+      "Data Structures & Algorithms",
+      "Deep Learning",
+      "Django",
+      "Django REST Framework",
+      "Express.js",
+      "Git",
+      "GitHub",
+      "HTML5",
+      "Java",
+      "JavaScript",
+      "Machine Learning",
+      "MongoDB",
+      "MySQL",
+      "Natural Language Processing",
+      "Node.js",
+      "NumPy",
+      "Object-Oriented Programming",
+      "Pandas",
+      "PostgreSQL",
+      "Problem Solving",
+      "Python",
+      "REST APIs",
+      "React",
+      "SQL",
+      "Scikit-Learn"
+    ],
+    "extracted_education": [
+      {
+        "degree": "B.E. in Computer Science",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "B.E. Computer Science",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "Data Science   Development Enthusiast",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "Engineering Student",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineer",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineering student pursuing a B.E. in Computer Science",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "applications and data-driven solutions.   Active Le"
+      },
+      {
+        "title": "projects, hackathons, and technical certificati"
+      },
+      {
+        "title": "Systems"
+      },
+      {
+        "title": "Platforms"
+      }
+    ],
+    "strengths": [
+      "Strong skill representation with 32 relevant technical proficiencies identified.",
+      "Effective use of strong action verbs across project and work bullet points.",
+      "Clear professional summary / profile heading included."
+    ],
+    "improvements": [
+      "Add measurable outcomes (e.g. 'improved latency by 35%', 'handled 5,000+ daily queries')."
+    ],
+    "missing_keywords": [
+      "Docker",
+      "CI/CD Pipelines",
+      "System Design"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 50,
+      "strong_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL"
+      ],
+      "missing_skills": [
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-07T18:06:17.690Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 2,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/Haripriyan_V_Resume_vvrhDqm.docx",
+    "file_name": "Haripriyan_V_Resume.docx",
+    "extracted_name": "Student Candidate",
+    "overall_score": 91,
+    "ats_score": 90,
+    "breakdown_scores": {
+      "skills": 99,
+      "experience": 80,
+      "projects": 85,
+      "education": 85,
+      "formatting": 100,
+      "ats_compatibility": 90
+    },
+    "extracted_skills": [
+      "python",
+      "javascript",
+      "java",
+      "c++",
+      "c#",
+      "react.js",
+      "html5",
+      "css3",
+      "node.js",
+      "express.js",
+      "django",
+      "django rest framework",
+      "rest",
+      "sql",
+      "mysql",
+      "postgresql",
+      "mongodb",
+      "machine learning",
+      "ml",
+      "deep learning",
+      "artificial intelligence",
+      "ai",
+      "data science",
+      "data analysis",
+      "numpy"
+    ],
+    "normalized_skills": [
+      "Agile / Scrum",
+      "Artificial Intelligence",
+      "C#",
+      "C++",
+      "CSS3",
+      "Data Analysis",
+      "Data Science",
+      "Data Structures & Algorithms",
+      "Deep Learning",
+      "Django",
+      "Django REST Framework",
+      "Express.js",
+      "Git",
+      "GitHub",
+      "HTML5",
+      "Java",
+      "JavaScript",
+      "Machine Learning",
+      "MongoDB",
+      "MySQL",
+      "Natural Language Processing",
+      "Node.js",
+      "NumPy",
+      "Object-Oriented Programming",
+      "Pandas",
+      "PostgreSQL",
+      "Problem Solving",
+      "Python",
+      "REST APIs",
+      "React",
+      "SQL",
+      "Scikit-Learn"
+    ],
+    "extracted_education": [
+      {
+        "degree": "B.E. in Computer Science",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "B.E. Computer Science",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "Data Science   Development Enthusiast",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "Engineering Student",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineer",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineering student pursuing a B.E. in Computer Science",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "applications and data-driven solutions.   Active Le"
+      },
+      {
+        "title": "projects, hackathons, and technical certificati"
+      },
+      {
+        "title": "Systems"
+      },
+      {
+        "title": "Platforms"
+      }
+    ],
+    "strengths": [
+      "Strong skill representation with 32 relevant technical proficiencies identified.",
+      "Effective use of strong action verbs across project and work bullet points.",
+      "Clear professional summary / profile heading included."
+    ],
+    "improvements": [
+      "Add measurable outcomes (e.g. 'improved latency by 35%', 'handled 5,000+ daily queries')."
+    ],
+    "missing_keywords": [
+      "Docker",
+      "CI/CD Pipelines",
+      "System Design"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 50,
+      "strong_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL"
+      ],
+      "missing_skills": [
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-07T18:06:20.558Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 3,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/HariPriyan_V_Resume.pdf",
+    "file_name": "HariPriyan_V_Resume.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 54,
+    "ats_score": 40,
+    "breakdown_scores": {
+      "skills": 33,
+      "experience": 55,
+      "projects": 60,
+      "education": 85,
+      "formatting": 100,
+      "ats_compatibility": 40
+    },
+    "extracted_skills": [
+      "r"
+    ],
+    "normalized_skills": [
+      "R"
+    ],
+    "extracted_education": [
+      {
+        "degree": "Bedl q9SYkbhRh",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "Be- A",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "BE 4r3mst0P Blq.gY",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [],
+    "extracted_projects": [],
+    "strengths": [
+      "Good inclusion of measurable metrics, percentages, and quantitative outcomes."
+    ],
+    "improvements": [
+      "Expand your technical skills section with current industry tools and frameworks.",
+      "Use strong action verbs (e.g. 'Engineered', 'Optimized', 'Architected') to begin accomplishment bullets.",
+      "Include a concise 2-3 sentence professional summary at the top."
+    ],
+    "missing_keywords": [
+      "Git",
+      "Docker",
+      "REST APIs",
+      "SQL"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 0,
+      "strong_skills": [],
+      "missing_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL",
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-07T18:06:39.374Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 4,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/HariPriyan_V_Resume_hUdFp1N.pdf",
+    "file_name": "HariPriyan_V_Resume.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 54,
+    "ats_score": 40,
+    "breakdown_scores": {
+      "skills": 33,
+      "experience": 55,
+      "projects": 60,
+      "education": 85,
+      "formatting": 100,
+      "ats_compatibility": 40
+    },
+    "extracted_skills": [
+      "r"
+    ],
+    "normalized_skills": [
+      "R"
+    ],
+    "extracted_education": [
+      {
+        "degree": "Bedl q9SYkbhRh",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "Be- A",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "BE 4r3mst0P Blq.gY",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [],
+    "extracted_projects": [],
+    "strengths": [
+      "Good inclusion of measurable metrics, percentages, and quantitative outcomes."
+    ],
+    "improvements": [
+      "Expand your technical skills section with current industry tools and frameworks.",
+      "Use strong action verbs (e.g. 'Engineered', 'Optimized', 'Architected') to begin accomplishment bullets.",
+      "Include a concise 2-3 sentence professional summary at the top."
+    ],
+    "missing_keywords": [
+      "Git",
+      "Docker",
+      "REST APIs",
+      "SQL"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 0,
+      "strong_skills": [],
+      "missing_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL",
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-07T18:06:41.673Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 5,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "resume_file": "resumes/alex_resume.txt",
+    "file_name": "alex_resume.txt",
+    "extracted_name": "Alex Rivera",
+    "overall_score": 94,
+    "ats_score": 87,
+    "breakdown_scores": {
+      "skills": 100,
+      "projects": 100,
+      "education": 100,
+      "experience": 100,
+      "certifications": 40,
+      "achievements": 70,
+      "formatting": 60,
+      "ats_compatibility": 87
+    },
+    "extracted_skills": [
+      "python",
+      "typescript",
+      "react",
+      "rest",
+      "sql",
+      "machine learning",
+      "ai",
+      "docker",
+      "git"
+    ],
+    "normalized_skills": [
+      "Artificial Intelligence",
+      "Docker",
+      "Git",
+      "Machine Learning",
+      "Python",
+      "REST APIs",
+      "React",
+      "SQL",
+      "TypeScript"
+    ],
+    "extracted_education": [
+      {
+        "degree": "Computer Science",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "Engineer with hands-on experience building scalable applic",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineer Intern\n- Developed Python microservices improving",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "applications.\n\nSKILLS\nPython, React, TypeScript, SQ"
+      },
+      {
+        "title": "PROJECTS\nSmart Career Advisor\n- Built career re"
+      }
+    ],
+    "strengths": [
+      "Strong skill representation with 9 relevant proficiencies detected.",
+      "Effective use of strong action verbs across accomplishment bullet points.",
+      "Good inclusion of measurable metrics, percentages, and quantitative results.",
+      "Clear professional summary statement included at the top."
+    ],
+    "improvements": [],
+    "missing_keywords": [
+      "CI/CD Pipelines",
+      "System Design"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 33,
+      "strong_skills": [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Docker"
+      ],
+      "missing_skills": [
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "TensorFlow",
+        "MLOps"
+      ]
+    },
+    "created_at": "2026-09-07T18:45:22.941Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 6,
+  "fields": {
+    "student": [
+      "student"
+    ],
+    "resume_file": "resumes/alex_resume_XvDi8kF.txt",
+    "file_name": "alex_resume.txt",
+    "extracted_name": "Alex Rivera",
+    "overall_score": 94,
+    "ats_score": 87,
+    "breakdown_scores": {
+      "skills": 100,
+      "projects": 100,
+      "education": 100,
+      "experience": 100,
+      "certifications": 40,
+      "achievements": 70,
+      "formatting": 60,
+      "ats_compatibility": 87
+    },
+    "extracted_skills": [
+      "python",
+      "typescript",
+      "react",
+      "rest",
+      "sql",
+      "machine learning",
+      "ai",
+      "docker",
+      "git"
+    ],
+    "normalized_skills": [
+      "Artificial Intelligence",
+      "Docker",
+      "Git",
+      "Machine Learning",
+      "Python",
+      "REST APIs",
+      "React",
+      "SQL",
+      "TypeScript"
+    ],
+    "extracted_education": [
+      {
+        "degree": "Computer Science",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "Engineer with hands-on experience building scalable applic",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineer Intern\n- Developed Python microservices improving",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "applications.\n\nSKILLS\nPython, React, TypeScript, SQ"
+      },
+      {
+        "title": "PROJECTS\nSmart Career Advisor\n- Built career re"
+      }
+    ],
+    "strengths": [
+      "Strong skill representation with 9 relevant proficiencies detected.",
+      "Effective use of strong action verbs across accomplishment bullet points.",
+      "Good inclusion of measurable metrics, percentages, and quantitative results.",
+      "Clear professional summary statement included at the top."
+    ],
+    "improvements": [],
+    "missing_keywords": [
+      "CI/CD Pipelines",
+      "System Design"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 33,
+      "strong_skills": [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Docker"
+      ],
+      "missing_skills": [
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "TensorFlow",
+        "MLOps"
+      ]
+    },
+    "created_at": "2026-09-07T18:46:34.795Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 7,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/HariPriyan_V_Resume_0PhmVRM.pdf",
+    "file_name": "HariPriyan_V_Resume.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 100,
+    "ats_score": 72,
+    "breakdown_scores": {
+      "skills": 100,
+      "projects": 100,
+      "education": 100,
+      "experience": 100,
+      "certifications": 100,
+      "achievements": 100,
+      "formatting": 100,
+      "ats_compatibility": 72
+    },
+    "extracted_skills": [
+      "python",
+      "java",
+      "c++",
+      "sql",
+      "machine learning",
+      "ml",
+      "artificial intelligence",
+      "ai",
+      "data science",
+      "data analysis",
+      "numpy",
+      "pandas",
+      "git",
+      "github",
+      "data structures",
+      "algorithms",
+      "oop",
+      "communication",
+      "teamwork",
+      "Python",
+      "Java",
+      "C++",
+      "SQL",
+      "Git",
+      "GitHub",
+      "Tkinter",
+      "VS Code",
+      "Jupyter Notebook",
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "SDLC",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Machine Learning"
+    ],
+    "normalized_skills": [
+      "Artificial Intelligence",
+      "C++",
+      "Communication",
+      "Data Analysis",
+      "Data Science",
+      "Data Structures & Algorithms",
+      "Git",
+      "GitHub",
+      "Java",
+      "Machine Learning",
+      "NumPy",
+      "Object-Oriented Programming",
+      "Pandas",
+      "Python",
+      "SQL",
+      "Team Collaboration",
+      "Tkinter",
+      "Vs Code",
+      "Jupyter Notebook",
+      "Sdlc",
+      "Matplotlib"
+    ],
+    "extracted_education": [
+      {
+        "degree": "B.E. Computer Science and Engineering",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "B.E. Computer Science",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "Computer Science and Engineering",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "Engineer",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineering",
+        "duration": "Recent"
+      },
+      {
+        "role": "internship and hackathon exposure. Proficient in Git",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "applications, debugging code, and collaborating on"
+      },
+      {
+        "title": "projects through internship and hackathon expos"
+      },
+      {
+        "title": "projects. Seeking internship and entry-level op"
+      },
+      {
+        "title": "apply analytical\nthinking, problem-solving,"
+      }
+    ],
+    "strengths": [
+      "Well-structured technical skills breakdown covering core CS concepts and modern tools.",
+      "Effective use of industry keywords such as Git/GitHub, SDLC, event-driven programming, and unit testing.",
+      "Action-oriented project descriptions detailing tech stacks and software engineering methodologies."
+    ],
+    "improvements": [
+      "The resume text is truncated and cuts off abruptly at the Internship section.",
+      "Using qualifiers like '(Basics)' weakens the presentation of technical skills to ATS and recruiters.",
+      "Complete and detail the truncated Internship Experience section to ensure full ATS readability.",
+      "Remove restrictive labels like '(Basics)' from listed programming languages to project greater confidence."
+    ],
+    "missing_keywords": [
+      "Docker",
+      "REST APIs",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 50,
+      "strong_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "SQL",
+        "Communication"
+      ],
+      "missing_skills": [
+        "Deep Learning",
+        "Statistics",
+        "PyTorch",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-07T19:05:39.898Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 8,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/HariPriyan_V_Resume_4dAYEc8.pdf",
+    "file_name": "HariPriyan_V_Resume.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 100,
+    "ats_score": 74,
+    "breakdown_scores": {
+      "skills": 100,
+      "projects": 100,
+      "education": 100,
+      "experience": 100,
+      "certifications": 100,
+      "achievements": 100,
+      "formatting": 100,
+      "ats_compatibility": 74
+    },
+    "extracted_skills": [
+      "python",
+      "java",
+      "c++",
+      "sql",
+      "machine learning",
+      "ml",
+      "artificial intelligence",
+      "ai",
+      "data science",
+      "data analysis",
+      "numpy",
+      "pandas",
+      "git",
+      "github",
+      "data structures",
+      "algorithms",
+      "oop",
+      "communication",
+      "teamwork",
+      "Python",
+      "Java",
+      "C++",
+      "SQL",
+      "Git",
+      "GitHub",
+      "Tkinter",
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "Machine Learning",
+      "Data Analysis",
+      "Pandas",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "normalized_skills": [
+      "Artificial Intelligence",
+      "C++",
+      "Communication",
+      "Data Analysis",
+      "Data Science",
+      "Data Structures & Algorithms",
+      "Git",
+      "GitHub",
+      "Java",
+      "Machine Learning",
+      "NumPy",
+      "Object-Oriented Programming",
+      "Pandas",
+      "Python",
+      "SQL",
+      "Team Collaboration",
+      "Tkinter",
+      "Matplotlib"
+    ],
+    "extracted_education": [
+      {
+        "degree": "B.E. Computer Science and Engineering",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "B.E. Computer Science",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "Computer Science and Engineering",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "Engineer",
+        "duration": "Recent"
+      },
+      {
+        "role": "Engineering",
+        "duration": "Recent"
+      },
+      {
+        "role": "internship and hackathon exposure. Proficient in Git",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "applications, debugging code, and collaborating on"
+      },
+      {
+        "title": "projects through internship and hackathon expos"
+      },
+      {
+        "title": "projects. Seeking internship and entry-level op"
+      },
+      {
+        "title": "apply analytical\nthinking, problem-solving,"
+      }
+    ],
+    "strengths": [
+      "Clear technical skill categorization covering core CS and AI/ML fundamentals",
+      "Good emphasis on practical engineering concepts like OOP, DSA, Git, and SDLC",
+      "Action-oriented project descriptions detailing tech stacks and design principles"
+    ],
+    "improvements": [
+      "Resume text is incomplete and cuts off at the Internship Experience section",
+      "Labeling critical skills like SQL, Java, and C++ as '(Basics)' weakens candidate positioning",
+      "Complete and expand the missing Internship Experience section",
+      "Remove qualifiers like '(Basics)' next to languages to present a stronger profile to ATS scanners"
+    ],
+    "missing_keywords": [
+      "Docker",
+      "REST APIs",
+      "Flask",
+      "Django",
+      "PyTorch"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 50,
+      "strong_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "SQL",
+        "Communication"
+      ],
+      "missing_skills": [
+        "Deep Learning",
+        "Statistics",
+        "PyTorch",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-07T19:05:51.737Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 9,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/HARIPRIYAN_V_RESUME_XXG2AgS.pdf",
+    "file_name": "HARIPRIYAN V_RESUME.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 66,
+    "ats_score": 10,
+    "breakdown_scores": {
+      "skills": 80,
+      "projects": 40,
+      "education": 100,
+      "experience": 46,
+      "certifications": 40,
+      "achievements": 100,
+      "formatting": 60,
+      "ats_compatibility": 10
+    },
+    "extracted_skills": [
+      "js",
+      "ts",
+      "go",
+      "r",
+      "tf"
+    ],
+    "normalized_skills": [
+      "Go",
+      "JavaScript",
+      "R",
+      "TensorFlow",
+      "TypeScript"
+    ],
+    "extracted_education": [
+      {
+        "degree": "Degree / Coursework in Technology",
+        "institution": "University / College"
+      }
+    ],
+    "extracted_experience": [],
+    "extracted_projects": [],
+    "strengths": [
+      "Document metadata contains a recognizable candidate name (Hari Priyan)",
+      "File formatting uses standard PDF header tags"
+    ],
+    "improvements": [
+      "Text content is encoded as unparseable raw PDF stream data",
+      "No extractable work history, education, or skills sections found",
+      "Re-export your resume from Canva or Word as a text-selectable PDF or DOCX file",
+      "Avoid saving resumes as flattened images or unparsed vectors that block ATS text extraction"
+    ],
+    "missing_keywords": [
+      "ATS-Friendly Formatting",
+      "Parseable Work Experience",
+      "Structured Education",
+      "Technical Skills"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 8,
+      "strong_skills": [
+        "TensorFlow"
+      ],
+      "missing_skills": [
+        "Python",
+        "Machine Learning",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL",
+        "Statistics",
+        "PyTorch",
+        "Communication",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-08T13:35:23.117Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 10,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/RESQ_MATCH_Judge_Questions_and_Answers.pdf",
+    "file_name": "RESQ_MATCH_Judge_Questions_and_Answers.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 94,
+    "ats_score": 35,
+    "breakdown_scores": {
+      "skills": 100,
+      "projects": 100,
+      "education": 100,
+      "experience": 100,
+      "certifications": 40,
+      "achievements": 100,
+      "formatting": 60,
+      "ats_compatibility": 35
+    },
+    "extracted_skills": [
+      "machine learning",
+      "ml",
+      "ai",
+      "communication",
+      "Disaster Management",
+      "Resource Allocation",
+      "System Architecture",
+      "GIS Concepts",
+      "Multi-Criteria Decision Analysis",
+      "Business Strategy"
+    ],
+    "normalized_skills": [
+      "Artificial Intelligence",
+      "Communication",
+      "Machine Learning",
+      "Disaster Management",
+      "Resource Allocation",
+      "System Architecture",
+      "Gis Concepts",
+      "Multi-Criteria Decision Analysis",
+      "Business Strategy"
+    ],
+    "extracted_education": [
+      {
+        "degree": "because during disasters, the challenge is not only identifying where an emergency",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "before",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "better",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "internet completely fails",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "project"
+      },
+      {
+        "title": "system\nthat supports the complete decision-mak"
+      },
+      {
+        "title": "project like this before"
+      },
+      {
+        "title": "platforms. We are not claiming that we\ninvented"
+      }
+    ],
+    "strengths": [
+      "Strong conceptual domain knowledge in Disaster Management and GIS workflow concepts.",
+      "Clear explanation of algorithmic decision-making and multi-criteria matching engines.",
+      "Demonstrates strategic awareness regarding business models (B2G/B2B) and system scalability."
+    ],
+    "improvements": [
+      "Document structure is a Q&A script rather than a standard ATS-compliant resume layout.",
+      "Missing essential resume sections including Work History, Education, and Contact Information.",
+      "Reformat the document into a standard resume structure featuring Professional Summary, Technical Skills, Experience, and Education sections.",
+      "Explicitly detail the tech stack used to build the matching algorithm and prototype (e.g., programming languages, frameworks, databases)."
+    ],
+    "missing_keywords": [
+      "Python",
+      "SQL",
+      "Docker",
+      "REST APIs",
+      "Cloud Platforms (AWS/GCP)"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 17,
+      "strong_skills": [
+        "Machine Learning",
+        "Communication"
+      ],
+      "missing_skills": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL",
+        "Statistics",
+        "PyTorch",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-08T13:37:10.563Z"
+  }
+},
+{
+  "model": "students.resumeanalysis",
+  "pk": 13,
+  "fields": {
+    "student": [
+      "admin3"
+    ],
+    "resume_file": "resumes/RESQ_MATCH_Judge_Questions_and_Answers_R57PTp8.pdf",
+    "file_name": "RESQ_MATCH_Judge_Questions_and_Answers.pdf",
+    "extracted_name": "Student Candidate",
+    "overall_score": 78,
+    "ats_score": 32,
+    "breakdown_scores": {
+      "keyword_match": 50,
+      "skills": 100,
+      "experience": 73,
+      "projects": 100,
+      "education": 100,
+      "formatting": 70,
+      "achievements": 100,
+      "contact_information": 0,
+      "ats_compatibility": 32
+    },
+    "extracted_skills": [
+      "machine learning",
+      "ml",
+      "ai",
+      "communication",
+      "Disaster Management",
+      "Decision Support Systems",
+      "Resource Allocation Algorithms",
+      "System Architecture",
+      "B2G / B2B Business Strategy"
+    ],
+    "normalized_skills": [
+      "Artificial Intelligence",
+      "Communication",
+      "Machine Learning",
+      "Disaster Management",
+      "Decision Support Systems",
+      "Resource Allocation Algorithms",
+      "System Architecture",
+      "B2G / B2B Business Strategy"
+    ],
+    "extracted_education": [
+      {
+        "degree": "because during disasters, the challenge is not only identifying where an emergency",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "before",
+        "institution": "Academic Institution"
+      },
+      {
+        "degree": "better",
+        "institution": "Academic Institution"
+      }
+    ],
+    "extracted_experience": [
+      {
+        "role": "internet completely fails",
+        "duration": "Recent"
+      }
+    ],
+    "extracted_projects": [
+      {
+        "title": "project"
+      },
+      {
+        "title": "system\nthat supports the complete decision-mak"
+      },
+      {
+        "title": "project like this before"
+      },
+      {
+        "title": "platforms. We are not claiming that we\ninvented"
+      }
+    ],
+    "strengths": [
+      "Strong problem-solving framework and clear product differentiation logic.",
+      "Articulates software architecture, scalability plans, and business models (B2G/B2B/SaaS)."
+    ],
+    "improvements": [
+      "The text is a project pitch Q&A document, not a standard professional resume.",
+      "Missing standard resume sections including candidate contact details, work experience, education, and personal technical skills.",
+      "Convert this text into a standard resume structure with contact details, education, technical proficiency, and project experience.",
+      "Highlight your individual technical role, specific programming languages, and tools used in building the RESQ-MATCH project."
+    ],
+    "missing_keywords": [
+      "Programming Languages (e.g., Python, C++)",
+      "Database Systems (SQL/NoSQL)",
+      "Version Control (Git)",
+      "Cloud Deployment / DevOps",
+      "GIS & Mapping Frameworks"
+    ],
+    "career_alignment": {
+      "career_id": 1,
+      "target_role": "AI / Machine Learning Engineer",
+      "match_percentage": 17,
+      "strong_skills": [
+        "Machine Learning",
+        "Communication"
+      ],
+      "missing_skills": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Deep Learning",
+        "SQL",
+        "Statistics",
+        "PyTorch",
+        "TensorFlow",
+        "MLOps",
+        "Docker"
+      ]
+    },
+    "created_at": "2026-09-09T14:06:27.797Z"
+  }
+}
+]
