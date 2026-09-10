@@ -195,6 +195,10 @@ DEFAULT_CORS_ORIGINS = [
 _env_cors = config('CORS_ALLOWED_ORIGINS', default='', cast=Csv())
 _extra_cors = [origin.strip() for origin in _env_cors if origin.strip()]
 CORS_ALLOWED_ORIGINS = list(dict.fromkeys(DEFAULT_CORS_ORIGINS + _extra_cors))
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+    r"^https://.*\.onrender\.com$",
+]
 CORS_ALLOW_CREDENTIALS = True
 
 _env_csrf = config('CSRF_TRUSTED_ORIGINS', default='', cast=Csv())
