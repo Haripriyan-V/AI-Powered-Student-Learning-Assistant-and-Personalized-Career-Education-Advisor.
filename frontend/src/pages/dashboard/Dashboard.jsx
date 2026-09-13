@@ -40,10 +40,22 @@ export default function Dashboard() {
     }
 
     Promise.all([
-      api.get('/learning/gamification/').catch(() => ({ data: null })),
-      api.get('/career/skill-gap/').catch(() => ({ data: null })),
-      api.get('/learning/roadmap/').catch(() => ({ data: null })),
-      api.get('/learning/courses/?limit=3').catch(() => ({ data: { results: [] } })),
+      api.get('/learning/gamification/').catch((err) => {
+        console.warn('Dashboard gamification fetch notice:', err?.response?.status, err?.message);
+        return { data: null };
+      }),
+      api.get('/career/skill-gap/').catch((err) => {
+        console.warn('Dashboard skill-gap fetch notice:', err?.response?.status, err?.message);
+        return { data: null };
+      }),
+      api.get('/learning/roadmap/').catch((err) => {
+        console.warn('Dashboard roadmap fetch notice:', err?.response?.status, err?.message);
+        return { data: null };
+      }),
+      api.get('/learning/courses/?limit=3').catch((err) => {
+        console.warn('Dashboard courses fetch notice:', err?.response?.status, err?.message);
+        return { data: { results: [] } };
+      }),
     ])
       .then(([gamRes, gapRes, roadRes, coursesRes]) => {
         setGamification(gamRes.data);

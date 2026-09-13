@@ -1,4 +1,8 @@
-const rawApiUrl = (import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api').trim().replace(/\/+$/, '');
+const defaultApiUrl = import.meta.env.PROD
+  ? 'https://ai-powered-student-learning-assistant-ab6q.onrender.com/api'
+  : 'http://127.0.0.1:8000/api';
+
+const rawApiUrl = (import.meta.env.VITE_API_BASE_URL || defaultApiUrl).trim().replace(/\/+$/, '');
 export const API_BASE_URL = rawApiUrl.endsWith('/api') ? rawApiUrl : `${rawApiUrl}/api`;
 
 export const ROLES = {

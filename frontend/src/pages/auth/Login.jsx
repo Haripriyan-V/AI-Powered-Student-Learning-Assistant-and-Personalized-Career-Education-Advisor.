@@ -22,7 +22,13 @@ export default function Login() {
       tokenStorage.setUser(data.user);
       navigate(ROUTES.DASHBOARD);
     } catch (err) {
-      setError(err?.response?.data?.detail || 'Login failed.');
+      if (!err?.response) {
+        setError('Unable to connect to the server. Please check your internet connection or try again.');
+      } else if (err.response.status >= 500) {
+        setError('Server error. Please try again later.');
+      } else {
+        setError(err.response.data?.detail || err.response.data?.message || 'Invalid username/email or password.');
+      }
     } finally {
       setLoading(false);
     }

@@ -8,6 +8,13 @@ from pathlib import Path
 class Command(BaseCommand):
     help = 'Creates or updates the default admin superuser safely and seeds database data'
 
+    def add_arguments(self, parser):
+        parser.add_argument(
+            '--force-seed',
+            action='store_true',
+            help='Force reloading fixtures from seed_data.json even if data exists.',
+        )
+
     def handle(self, *args, **options):
         User = get_user_model()
         username = os.environ.get('DJANGO_ADMIN_USERNAME', 'admin')
@@ -35,11 +42,17 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS(f"Superuser '{username}' password updated successfully."))
 
         # Auto-seed initial platform data (courses, careers, scholarships, colleges, questions)
+        # only if the database does not already contain records, to preserve admin edits.
         seed_file = Path(__file__).resolve().parent.parent.parent.parent / 'seed_data.json'
         if seed_file.exists():
             try:
-                self.stdout.write("Loading initial data from seed_data.json...")
-                call_command('loaddata', str(seed_file))
-                self.stdout.write(self.style.SUCCESS("Initial seed data loaded successfully!"))
+                from learning.models import Course
+                has_data = Course.objects.exists()
+                if not has_data or options.get('force_seed'):
+                    self.stdout.write("Loading initial data from seed_data.json...")
+                    call_command('loaddata', str(seed_file))
+                    self.stdout.write(self.style.SUCCESS("Initial seed data loaded successfully!"))
+                else:
+                    self.stdout.write("Database already contains records; skipping fixture overwrite to preserve data.")
             except Exception as e:
                 self.stdout.write(self.style.WARNING(f"Note on seeding data: {e}"))

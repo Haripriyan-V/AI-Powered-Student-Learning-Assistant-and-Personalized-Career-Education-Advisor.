@@ -25,18 +25,24 @@ export default function Register() {
       tokenStorage.setUser(loginResp.data.user);
       navigate(ROUTES.DASHBOARD);
     } catch (err) {
-      const data = err?.response?.data;
-      if (typeof data === 'string') {
-        setError(data);
-      } else if (data?.detail) {
-        setError(data.detail);
-      } else if (data && typeof data === 'object') {
-        const messages = Object.entries(data)
-          .map(([key, val]) => `${key}: ${Array.isArray(val) ? val.join(' ') : val}`)
-          .join(' | ');
-        setError(messages || 'Registration failed');
+      if (!err?.response) {
+        setError('Unable to connect to the server. Please check your internet connection and try again.');
+      } else if (err.response.status >= 500) {
+        setError('Server error. Please try again later.');
       } else {
-        setError('Registration failed. Please check your details and try again.');
+        const data = err.response.data;
+        if (typeof data === 'string') {
+          setError(data);
+        } else if (data?.detail) {
+          setError(data.detail);
+        } else if (data && typeof data === 'object') {
+          const messages = Object.entries(data)
+            .map(([key, val]) => `${key}: ${Array.isArray(val) ? val.join(' ') : val}`)
+            .join(' | ');
+          setError(messages || 'Registration failed.');
+        } else {
+          setError('Registration failed. Please check your details and try again.');
+        }
       }
     } finally {
       setLoading(false);
