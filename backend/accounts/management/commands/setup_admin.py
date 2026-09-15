@@ -41,18 +41,11 @@ class Command(BaseCommand):
         else:
             self.stdout.write(self.style.SUCCESS(f"Superuser '{username}' password updated successfully."))
 
-        # Auto-seed initial platform data (courses, careers, scholarships, colleges, questions)
-        # only if the database does not already contain records, to preserve admin edits.
-        seed_file = Path(__file__).resolve().parent.parent.parent.parent / 'seed_data.json'
-        if seed_file.exists():
-            try:
-                from learning.models import Course
-                has_data = Course.objects.exists()
-                if not has_data or options.get('force_seed'):
-                    self.stdout.write("Loading initial data from seed_data.json...")
-                    call_command('loaddata', str(seed_file))
-                    self.stdout.write(self.style.SUCCESS("Initial seed data loaded successfully!"))
-                else:
-                    self.stdout.write("Database already contains records; skipping fixture overwrite to preserve data.")
-            except Exception as e:
-                self.stdout.write(self.style.WARNING(f"Note on seeding data: {e}"))
+        # Auto-seed comprehensive platform data (careers, skills, courses, entrance exams, colleges, scholarships)
+        try:
+            self.stdout.write("Running idempotent seed_all_data...")
+            call_command('seed_all_data')
+            self.stdout.write(self.style.SUCCESS("Platform data seeded and verified idempotent!"))
+        except Exception as e:
+            self.stdout.write(self.style.WARNING(f"Note on seeding data: {e}"))
+

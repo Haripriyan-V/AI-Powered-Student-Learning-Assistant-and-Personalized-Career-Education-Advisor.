@@ -31,16 +31,39 @@ export default function StudyPlanner() {
     }
   };
 
-  const handleAddGoal = () => {
+  const handleAddGoal = async () => {
     if (!newGoal.trim()) return;
-    const customTask = {
-      id: `custom-${Date.now()}`,
-      task: newGoal.trim(),
-      completed: false,
-      estimated_minutes: 30,
-    };
-    setTodaysGoals([...todaysGoals, customTask]);
-    setNewGoal('');
+    try {
+      const res = await api.post('/learning/planner/', { task: newGoal.trim() });
+      if (res.data?.task) {
+        const newTask = {
+          id: `db-${res.data.task.id}`,
+          task_db_id: res.data.task.id,
+          task: res.data.task.task,
+          completed: false,
+          hours: 0.5,
+          day: 'Today',
+          is_custom: true,
+        };
+        setTodaysGoals([...todaysGoals, newTask]);
+        setNewGoal('');
+        if (res.data.message) {
+          setToggleMsg(res.data.message);
+          setTimeout(() => setToggleMsg(null), 3000);
+        }
+      }
+    } catch (err) {
+      console.error('Failed to save study goal to backend:', err);
+      // Fallback local update if network issue
+      const fallbackTask = {
+        id: `custom-${Date.now()}`,
+        task: newGoal.trim(),
+        completed: false,
+        hours: 0.5,
+      };
+      setTodaysGoals([...todaysGoals, fallbackTask]);
+      setNewGoal('');
+    }
   };
 
   const handleToggleGoal = async (goal) => {

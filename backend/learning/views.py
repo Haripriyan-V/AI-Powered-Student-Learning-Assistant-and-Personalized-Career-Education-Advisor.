@@ -9,6 +9,7 @@ from core.permissions import IsCounselorOrAdmin
 from .models import (
     Subject, Course, LearningResource, Quiz, Question, Choice,
     QuizAttempt, StudentProgress, Scholarship, College,
+    EntranceExam, StudyTask,
 )
 from .serializers import (
     SubjectSerializer, CourseSerializer, CourseListSerializer,
@@ -16,6 +17,7 @@ from .serializers import (
     QuestionSerializer, ChoiceSerializer, QuizAttemptSerializer,
     QuizSubmissionSerializer, StudentProgressSerializer,
     ScholarshipSerializer, CollegeSerializer,
+    EntranceExamSerializer, StudyTaskSerializer,
 )
 
 
@@ -313,34 +315,163 @@ class DailyCheckinView(APIView):
 
 
 # ---------------------------------------------------------------------------
-# Dynamic Study Planner Views
+# Entrance Exams
 # ---------------------------------------------------------------------------
 
+class EntranceExamViewSet(viewsets.ModelViewSet):
+    """
+    List / Retrieve entrance exams.
+    - Read: Authenticated
+    - Write: Counselors / Admins
+    """
+    queryset = EntranceExam.objects.prefetch_related('related_career_paths').filter(is_active=True)
+    serializer_class = EntranceExamSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ['exam_category', 'is_active']
+    search_fields = ['name', 'conducting_body', 'syllabus_summary', 'eligibility']
+    ordering_fields = ['name', 'created_at']
+
+    def get_permissions(self):
+        if self.action in ('create', 'update', 'partial_update', 'destroy'):
+            return [IsCounselorOrAdmin()]
+        return [permissions.IsAuthenticated()]
+
+
+# ---------------------------------------------------------------------------
+# Dynamic Study Planner Views & StudyTask ViewSet
+# ---------------------------------------------------------------------------
+
+class StudyTaskViewSet(viewsets.ModelViewSet):
+    """
+    CRUD for authenticated student's study tasks with strict user data isolation.
+    """
+    serializer_class = StudyTaskSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ['completed', 'priority', 'status', 'scheduled_date']
+    search_fields = ['task', 'notes']
+    ordering_fields = ['scheduled_date', 'priority', 'created_at', 'completed']
+
+    def get_queryset(self):
+        return StudyTask.objects.filter(student=self.request.user)
+
+    def perform_create(self, serializer):
+        serializer.save(student=self.request.user)
+
+
 class StudyPlannerView(APIView):
-    """GET /api/learning/planner/ -> returns student's dynamically generated study plan based on skill gaps."""
+    """
+    GET  /api/learning/planner/ -> returns student's dynamically generated study plan based on skill gaps AND persisted custom tasks.
+    POST /api/learning/planner/ -> allows adding a custom persisted study task.
+    """
     permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         from .roadmap_service import RoadmapService
         plan = RoadmapService.get_study_plan(request.user)
+        
+        # Merge persisted StudyTask items for this student
+        custom_tasks = StudyTask.objects.filter(student=request.user)
+        custom_goals = []
+        for ct in custom_tasks:
+            custom_goals.append({
+                'id': f"db-{ct.id}",
+                'task_db_id': ct.id,
+                'task': ct.task,
+                'day': ct.scheduled_date.strftime('%A') if ct.scheduled_date else 'Today',
+                'hours': round(ct.estimated_minutes / 60, 1) if ct.estimated_minutes else 0.5,
+                'completed': ct.completed,
+                'priority': ct.priority,
+                'notes': ct.notes or '',
+                'is_custom': True,
+            })
+        
+        # Combine goals
+        all_goals = plan.get('goals', []) + custom_goals
+        completed_count = sum(1 for g in all_goals if g.get('completed'))
+        total_count = len(all_goals)
+        completed_percent = round((completed_count / total_count) * 100) if total_count > 0 else 0
+        total_hours = sum(g.get('hours', 0) for g in all_goals)
+        
+        plan['goals'] = all_goals
+        plan['completed_count'] = completed_count
+        plan['total_count'] = total_count
+        plan['completed_percent'] = completed_percent
+        plan['total_weekly_hours'] = total_hours
         return Response(plan)
+
+    def post(self, request):
+        """Allow adding a custom study task through the planner endpoint directly."""
+        task_title = request.data.get('task') or request.data.get('title')
+        if not task_title or not str(task_title).strip():
+            return Response({'error': 'Task title is required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        task = StudyTask.objects.create(
+            student=request.user,
+            task=str(task_title).strip(),
+            estimated_minutes=request.data.get('estimated_minutes', 30),
+            priority=request.data.get('priority', 'medium'),
+            notes=request.data.get('notes', ''),
+        )
+        return Response({
+            'success': True,
+            'message': f"Added study task '{task.task}'",
+            'task': StudyTaskSerializer(task).data,
+        }, status=status.HTTP_201_CREATED)
 
 
 class StudyPlannerToggleView(APIView):
-    """POST /api/learning/planner/toggle/ -> toggles completion of a study plan goal."""
+    """POST /api/learning/planner/toggle/ -> toggles completion of an adaptive or custom study plan goal."""
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
         from .roadmap_service import RoadmapService
-        task_id = request.data.get('task_id')
-        if task_id is None:
+        raw_task_id = request.data.get('task_id')
+        if raw_task_id is None:
             return Response({'error': 'task_id is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Check if it's a persisted StudyTask
+        str_id = str(raw_task_id)
+        if str_id.startswith('db-') or (isinstance(raw_task_id, int) and StudyTask.objects.filter(id=raw_task_id, student=request.user).exists()):
+            db_id = int(str_id.replace('db-', '')) if str_id.startswith('db-') else raw_task_id
+            task = StudyTask.objects.filter(id=db_id, student=request.user).first()
+            if not task:
+                return Response({'error': 'Task not found'}, status=status.HTTP_404_NOT_FOUND)
+            
+            desired = request.data.get('completed')
+            if desired is not None:
+                task.completed = bool(desired)
+            else:
+                task.completed = not task.completed
+            task.status = 'completed' if task.completed else 'pending'
+            task.save()
+
+            # Award XP if completed
+            if task.completed:
+                from .gamification_service import GamificationService
+                GamificationService.award_xp(
+                    student=request.user,
+                    activity_type='planner_task',
+                    title=f"Completed study goal: {task.task}",
+                    xp_amount=15,
+                    metadata={'task_id': task.id}
+                )
+
+            return Response({
+                'success': True,
+                'completed': task.completed,
+                'message': f"Task marked {'complete' if task.completed else 'pending'}.",
+                'task': StudyTaskSerializer(task).data
+            }, status=status.HTTP_200_OK)
+
+        # Otherwise delegate to RoadmapService for adaptive roadmap goals
         try:
-            task_id_parsed = int(task_id)
+            task_id_parsed = int(raw_task_id)
         except (ValueError, TypeError):
-            task_id_parsed = task_id
+            task_id_parsed = raw_task_id
         result = RoadmapService.toggle_study_task(request.user, task_id_parsed)
         if 'error' in result:
             return Response(result, status=status.HTTP_404_NOT_FOUND)
         return Response(result, status=status.HTTP_200_OK)
+
 

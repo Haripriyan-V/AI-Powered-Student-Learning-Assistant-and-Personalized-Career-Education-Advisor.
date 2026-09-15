@@ -13,6 +13,8 @@ router.register(r'attempts', views.QuizAttemptViewSet, basename='quiz-attempt')
 router.register(r'progress', views.StudentProgressViewSet, basename='student-progress')
 router.register(r'scholarships', views.ScholarshipViewSet, basename='scholarship')
 router.register(r'colleges', views.CollegeViewSet, basename='college')
+router.register(r'entrance-exams', views.EntranceExamViewSet, basename='entrance-exam')
+router.register(r'study-tasks', views.StudyTaskViewSet, basename='study-task')
 
 urlpatterns = [
     path('roadmap/', views.LearningRoadmapView.as_view(), name='learning-roadmap'),

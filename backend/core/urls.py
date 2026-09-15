@@ -15,8 +15,29 @@ def health_check(request):
     })
 
 
+def root_view(request):
+    return JsonResponse({
+        'status': 'ok',
+        'service': 'disha-ai-backend',
+        'version': '1.0.0',
+        'message': 'DishaAI Backend API is running successfully.',
+        'endpoints': {
+            'admin': '/admin/',
+            'health': '/health/',
+            'api_health': '/api/health/',
+            'auth': '/api/accounts/',
+            'career': '/api/career/',
+            'learning': '/api/learning/',
+            'students': '/api/students/',
+            'chatbot': '/api/chatbot/',
+        },
+        'frontend_url': 'https://ai-powered-student-learning-assista-red.vercel.app'
+    })
+
+
 urlpatterns = [
-    # Health checks for deployment monitoring (Phase 29)
+    # Root & Health check endpoints
+    path('', root_view, name='root'),
     path('health/', health_check, name='health_check'),
     path('api/health/', health_check, name='api_health_check'),
 

@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import (
     Subject, Course, LearningResource, Quiz, Question, Choice,
     QuizAttempt, StudentProgress, Scholarship, College,
+    EntranceExam, StudyTask,
 )
 
 
@@ -197,4 +198,36 @@ class LearningActivitySerializer(serializers.ModelSerializer):
         model = LearningActivity
         fields = ('id', 'activity_type', 'title', 'xp_awarded', 'metadata', 'created_at')
         read_only_fields = ('created_at',)
+
+
+class EntranceExamSerializer(serializers.ModelSerializer):
+    related_career_names = serializers.SerializerMethodField()
+
+    class Meta:
+        model = EntranceExam
+        fields = (
+            'id', 'name', 'conducting_body', 'exam_category', 'eligibility',
+            'application_period', 'exam_date_reference', 'official_website',
+            'registration_url', 'exam_pattern', 'syllabus_summary',
+            'related_career_paths', 'related_career_names', 'is_active', 'created_at',
+        )
+
+    def get_related_career_names(self, obj):
+        return [c.title for c in obj.related_career_paths.all()]
+
+
+class StudyTaskSerializer(serializers.ModelSerializer):
+    subject_name = serializers.CharField(source='subject.name', read_only=True)
+    skill_name = serializers.CharField(source='skill.name', read_only=True)
+
+    class Meta:
+        model = StudyTask
+        fields = (
+            'id', 'student', 'task', 'subject', 'subject_name', 'skill',
+            'skill_name', 'scheduled_date', 'start_time', 'end_time',
+            'estimated_minutes', 'priority', 'status', 'completed', 'notes',
+            'created_at', 'updated_at',
+        )
+        read_only_fields = ('student', 'created_at', 'updated_at')
+
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Interest, Skill, StudentProfile, StudentSkill, Education
+from .models import Interest, Skill, StudentProfile, StudentSkill, Education, ResumeAnalysis
 
 
 class StudentSkillInline(admin.TabularInline):
@@ -43,3 +43,12 @@ class EducationAdmin(admin.ModelAdmin):
 class StudentSkillAdmin(admin.ModelAdmin):
     list_display = ('student_profile', 'skill', 'proficiency')
     list_filter = ('proficiency',)
+
+
+@admin.register(ResumeAnalysis)
+class ResumeAnalysisAdmin(admin.ModelAdmin):
+    list_display = ('student', 'file_name', 'overall_score', 'ats_score', 'created_at')
+    list_filter = ('overall_score',)
+    search_fields = ('student__username', 'file_name', 'extracted_name')
+    readonly_fields = ('created_at',)
+

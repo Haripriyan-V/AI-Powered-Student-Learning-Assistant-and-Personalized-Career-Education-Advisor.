@@ -37,6 +37,25 @@ class ResumeParser:
                 return ""
 
         elif filename_lower.endswith('.docx') or filename_lower.endswith('.doc'):
+            # First try python-docx if available and valid .docx
+            if filename_lower.endswith('.docx'):
+                try:
+                    import docx
+                    if hasattr(file_obj, 'seek'):
+                        file_obj.seek(0)
+                    doc = docx.Document(file_obj)
+                    paragraphs_text = [p.text for p in doc.paragraphs if p.text]
+                    for table in doc.tables:
+                        for row in table.rows:
+                            row_cells = [cell.text.strip() for cell in row.cells if cell.text.strip()]
+                            if row_cells:
+                                paragraphs_text.append(" | ".join(row_cells))
+                    extracted = "\n".join(paragraphs_text)
+                    if extracted.strip():
+                        return extracted
+                except Exception as docx_err:
+                    logger.info("python-docx parsing note: %s. Trying zipfile parser.", docx_err)
+
             # DOCX is a zip file containing word/document.xml
             try:
                 if hasattr(file_obj, 'seek'):

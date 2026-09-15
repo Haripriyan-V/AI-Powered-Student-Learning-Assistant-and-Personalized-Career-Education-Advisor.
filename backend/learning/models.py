@@ -287,6 +287,9 @@ class StudentGamification(models.Model):
         return f"{self.student.username} - Level {self.level} ({self.xp} XP) 🔥 {self.current_streak}d"
 
 
+from django.utils import timezone
+
+
 class LearningActivity(models.Model):
     """Audit log of student achievements, lessons completed, quizzes passed for analytics and XP."""
     student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='learning_activities')
@@ -304,4 +307,83 @@ class LearningActivity(models.Model):
 
     def __str__(self):
         return f"{self.student.username} - {self.title} (+{self.xp_awarded} XP)"
+
+
+# ---------------------------------------------------------------------------
+# Entrance Exams
+# ---------------------------------------------------------------------------
+
+class EntranceExam(models.Model):
+    """National and state entrance exams with verified information and official portals."""
+
+    class ExamCategory(models.TextChoices):
+        ENGINEERING = 'engineering', 'Engineering'
+        MEDICAL = 'medical', 'Medical'
+        MANAGEMENT = 'management', 'Management'
+        CIVIL_SERVICES = 'civil_services', 'Civil Services'
+        LAW = 'law', 'Law'
+        SCIENCES = 'sciences', 'Sciences & Research'
+        OTHER = 'other', 'Other'
+
+    name = models.CharField(max_length=255)
+    conducting_body = models.CharField(max_length=255, help_text="e.g. NTA, IITs, NBE, UPSC")
+    exam_category = models.CharField(
+        max_length=50, choices=ExamCategory.choices, default=ExamCategory.ENGINEERING
+    )
+    eligibility = models.TextField(blank=True, null=True, help_text="Eligibility criteria & educational qualifications")
+    application_period = models.CharField(max_length=255, blank=True, null=True, help_text="Application window or dates e.g. Dec - Jan (Annual)")
+    exam_date_reference = models.CharField(max_length=255, blank=True, null=True, help_text="Expected exam window / reference date")
+    official_website = models.URLField(blank=True, null=True, help_text="Official exam portal")
+    registration_url = models.URLField(blank=True, null=True, help_text="Direct registration link if active")
+    exam_pattern = models.TextField(blank=True, null=True, help_text="Format: Mode (CBT/Offline), Duration, Sections, Marking scheme")
+    syllabus_summary = models.TextField(blank=True, null=True, help_text="Key subjects and high-weightage topics covered")
+    related_career_paths = models.ManyToManyField('career.CareerPath', blank=True, related_name='entrance_exams')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name} ({self.conducting_body})"
+
+
+# ---------------------------------------------------------------------------
+# Study Planner Tasks
+# ---------------------------------------------------------------------------
+
+class StudyTask(models.Model):
+    """Individual study planner task created by or tailored for an authenticated student with user isolation."""
+
+    class Priority(models.TextChoices):
+        LOW = 'low', 'Low'
+        MEDIUM = 'medium', 'Medium'
+        HIGH = 'high', 'High'
+
+    class Status(models.TextChoices):
+        PENDING = 'pending', 'Pending'
+        IN_PROGRESS = 'in_progress', 'In Progress'
+        COMPLETED = 'completed', 'Completed'
+
+    student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='study_tasks')
+    task = models.CharField(max_length=255)
+    subject = models.ForeignKey(Subject, on_delete=models.SET_NULL, null=True, blank=True, related_name='study_tasks')
+    skill = models.ForeignKey('students.Skill', on_delete=models.SET_NULL, null=True, blank=True, related_name='study_tasks')
+    scheduled_date = models.DateField(default=timezone.now)
+    start_time = models.TimeField(blank=True, null=True)
+    end_time = models.TimeField(blank=True, null=True)
+    estimated_minutes = models.PositiveIntegerField(default=30)
+    priority = models.CharField(max_length=20, choices=Priority.choices, default=Priority.MEDIUM)
+    status = models.CharField(max_length=20, choices=Status.choices, default=Status.PENDING)
+    completed = models.BooleanField(default=False)
+    notes = models.TextField(blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['completed', 'scheduled_date', '-priority', '-created_at']
+
+    def __str__(self):
+        return f"{self.student.username}: {self.task} ({'Done' if self.completed else 'Pending'})"
+
 
