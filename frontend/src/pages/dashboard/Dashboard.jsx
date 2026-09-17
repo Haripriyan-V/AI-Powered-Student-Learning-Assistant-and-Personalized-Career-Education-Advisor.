@@ -18,11 +18,12 @@ import {
 import api from '../../services/api';
 import { Loader } from '../../components/common/Loader';
 import { ROUTES } from '../../utils/constants';
+import { tokenStorage } from '../../utils/tokenStorage';
 
 export default function Dashboard() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => tokenStorage.getUser());
   const [gamification, setGamification] = useState(null);
   const [skillGap, setSkillGap] = useState(null);
   const [roadmap, setRoadmap] = useState(null);
@@ -32,11 +33,9 @@ export default function Dashboard() {
 
   useEffect(() => {
     // Load stored user profile
-    const storedUser = localStorage.getItem('disha_user');
+    const storedUser = tokenStorage.getUser();
     if (storedUser) {
-      try {
-        setUser(JSON.parse(storedUser));
-      } catch (e) {}
+      setUser(storedUser);
     }
 
     Promise.all([
@@ -91,6 +90,22 @@ export default function Dashboard() {
   const prioritySkills = skillGap?.priority_skills || [];
   const currentTask = roadmap?.phases?.flatMap((p) => p.items)?.find((i) => i.status === 'in_progress');
 
+  const getGreeting = () => {
+    if (!user || typeof user !== 'object') return 'Welcome!';
+
+    const fullName = [user.first_name, user.last_name]
+      .filter((part) => typeof part === 'string' && part.trim().length > 0)
+      .map((part) => part.trim())
+      .join(' ');
+    if (fullName) return `Welcome, ${fullName}!`;
+
+    if (typeof user.username === 'string' && user.username.trim().length > 0) {
+      return `Welcome, ${user.username.trim()}!`;
+    }
+
+    return 'Welcome!';
+  };
+
   return (
     <div className="space-y-8 pb-12">
       {/* Welcome Hero Banner */}
@@ -104,7 +119,7 @@ export default function Dashboard() {
             <div className="flex items-center gap-3">
               <span className="text-xl">👋</span>
               <h1 className="text-2xl lg:text-3xl font-extrabold text-ink-900 dark:text-ink-50">
-                Welcome back, {user?.first_name || user?.username || 'Student'}!
+                {getGreeting()}
               </h1>
             </div>
 
